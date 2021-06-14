@@ -27,7 +27,7 @@
   background: #fff;
   width: 130px;
   text-align: center;
-  color: #388;
+  color: #99d98c;
 }
 
 #icon {
@@ -104,7 +104,7 @@
   transition: 0.17s ease-in-out;
 }
 .devicon-redux-original:hover {
-  color: rgb(99, 221, 243);
+  color: rgb(88, 55, 136);
   animation: bounce 0.8s infinite;
 }
 

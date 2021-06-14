@@ -1,45 +1,68 @@
 body {
   padding-top: 0px;
+  /* background-color: #000; */
+}
+html {
 }
 
 /* ================= NAVBAR ================== */
 
-.navbar {
-  background: #0000;
+.navbar1 {
   height: 80px;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 10px;
   width: 100%;
   display: flex;
   align-items: center;
   z-index: 4;
+  transition: 0.5s;
 }
 
-.fa-moon {
+.navbar2 {
+  height: 65px;
   position: fixed;
-  right: 29%;
-  font-size: 20px;
-  color: #fff;
-}
-.fa-sun {
-  position: fixed;
-  right: 29%;
-  font-size: 20px;
-  color: #fff;
+  top: -90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+  transition: 0.5s;
+  background-image: linear-gradient(to left, #248277, #67b99a, #99e2b4 100%);
 }
 
 .nav-links {
-  position: fixed;
+  position: absolute;
   right: 0;
   margin-right: 30px;
 }
 
 .nav-links > a {
   text-decoration: none;
-  color: #fff;
+  color: #fff9;
   padding: 0 12px;
-  text-shadow: 1px 1px 4px #0009;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.nav-links > a:hover {
+  color: #fff;
+}
+
+.about-link {
+  color: #fff !important;
+}
+
+.navbar2 > div > a {
+  text-decoration: none;
+  color: #fff9;
+  padding: 0 12px;
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.3s;
+}
+.navbar2 > div > a:hover {
+  color: #fff !important;
 }
 
 /* ================= PROFILE ================== */
@@ -54,17 +77,78 @@ body {
   font-family: Oswald;
   margin-left: 16%;
   width: 100%;
-  color: #bbb;
+  color: #3f3f3f;
   font-weight: 500;
   letter-spacing: 4px;
 }
+
+.flick-on,
+.flick-off {
+  position: absolute;
+  right: 114%;
+  border: none;
+  background: none;
+  color: #eee;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.flick-on:hover,
+.flick-off:hover {
+  color: #fff;
+  letter-spacing: 2px;
+  right: 113%;
+}
+
+.flick-on {
+  display: none;
+}
+
 .title-left {
   font-size: 100px;
   font-family: josefin sans;
   margin-left: 9%;
   width: 100%;
-  color: #555;
+  color: #eee;
   text-align: left;
+  text-shadow: 2px 2px 10px #0006;
+}
+.flicker {
+  animation: flicker 5s linear infinite;
+}
+
+@keyframes flicker {
+  0%,
+  5%,
+  18%,
+  20%,
+  25%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  95% {
+    color: #83c5be;
+    text-shadow: none;
+  }
+  5.1%,
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #4cc9f0, 0 0 20px #4cc9f0, 0 0 40px #4cc9f0,
+      0 0 80px #4cc9f0, 0 0 160px #4cc9f0;
+  }
 }
 
 .desc-left {
@@ -74,7 +158,10 @@ body {
   position: absolute;
   top: 65%;
   width: 70%;
-  color: #0008;
+  color: #2d3a60;
+  text-shadow: 2px 3px 6px #0003;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 .desc-right {
   font-size: 26px;
@@ -83,7 +170,7 @@ body {
   position: absolute;
   top: 65%;
   width: 60%;
-  color: #ddd;
+  color: #5f5f5f;
   font-weight: 400;
 }
 
@@ -117,11 +204,17 @@ body {
   text-align: center;
 }
 
-.panel img {
-  /* box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15); */
+.panel .img-right {
   width: 35%;
   position: absolute;
-  top: 55%;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.panel .img-left {
+  width: 35%;
+  position: absolute;
+  top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -131,8 +224,8 @@ body {
   z-index: 1;
   background-image: linear-gradient(
     to bottom,
-    rgb(0, 0, 0),
-    rgb(80, 80, 80),
+    #52b69a,
+    #99d98c,
     rgb(255, 255, 255) 100%
   );
 }
@@ -150,6 +243,12 @@ body {
     rgba(255, 255, 255, 0),
     rgb(255, 255, 255) 100%
   );
+  background-image: linear-gradient(
+    to bottom,
+    #52b69a,
+    #99d98c,
+    rgb(255, 255, 255) 100%
+  );
 
   /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
@@ -164,7 +263,7 @@ body {
   height: 100%;
   position: absolute;
   display: block;
-  background-color: #0003;
+  background-color: #184e7755;
   width: 5px;
   top: 0;
   left: 50%;
@@ -191,10 +290,6 @@ body {
   transform: skew(30deg);
   margin-left: 1000px;
 }
-
-/* .content {
-  margin-top: 50px;
-} */
 
 /* Responsive. */
 @media (max-width: 900px) {

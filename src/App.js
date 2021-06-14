@@ -12,6 +12,27 @@ import Andy2 from "../src/images/andy2.png";
 import React, { useState } from "react";
 
 export default function App() {
+  const [flicker, setFlicker] = useState(true);
+  const flick = flicker ? "title-left flicker" : "title-left";
+
+  function flickOn() {
+    let offButton = document.querySelector(".flick-off");
+    let onButton = document.querySelector(".flick-on");
+    setFlicker(true);
+
+    onButton.style.display = "none";
+    offButton.style.display = "block";
+  }
+  function flickOff() {
+    let offButton = document.querySelector(".flick-off");
+    let onButton = document.querySelector(".flick-on");
+
+    setFlicker(false);
+
+    offButton.style.display = "none";
+    onButton.style.display = "block";
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     var parent = document.querySelector(".splitview"),
       topPanel = parent.querySelector(".top"),
@@ -37,7 +58,7 @@ export default function App() {
   });
   return (
     <div className="App">
-      <Navbar />
+      <Navbar flickOn={flickOn} flickOff={flickOff} />
 
       <div class="splitview skewed">
         <div class="panel bottom">
@@ -50,27 +71,30 @@ export default function App() {
               </p>
             </div>
 
-            <img src={Andy} alt="Original" />
+            <img className="img-right" src={Andy} alt="Original" />
           </div>
         </div>
 
         <div class="panel top">
           <div class="content">
             <div class="description">
-              <h1 className="title-left">Andy Checo</h1>
+              <h1 className={flick}>Andy Checo</h1>
               <p className="desc-left">
-                My family take up a huge percentage of my happiness. They are
-                one of the reasons why I am so dedicated on going forward.
+                My family is my light. They take up a huge percentage of my
+                happiness. That makes them one of the reasons why I am so
+                dedicated on going forward.
               </p>
             </div>
 
-            <img src={AndyAndYoshi} alt="Duotone" />
+            <img className="img-left" src={AndyAndYoshi} alt="Duotone" />
           </div>
         </div>
 
         <div class="handle"></div>
       </div>
 
+      <Skills />
+      <Skills />
       <Skills />
 
       <Footer />
