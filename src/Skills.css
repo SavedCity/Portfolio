@@ -1,0 +1,246 @@
+.skills-container {
+  /* background-color: #0008; */
+}
+.skills-title {
+  text-align: center;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background: #0003; */
+  margin: 0 200px;
+  align-items: center;
+}
+.icons-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-container > div > i {
+  margin: 30px;
+  padding-bottom: 10px;
+  z-index: 1;
+  background: #fff;
+  width: 130px;
+  text-align: center;
+  color: #388;
+}
+
+#icon {
+  border-bottom: 1px solid #0000;
+  transition: 0.5s ease-in-out;
+}
+
+#icon-line {
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+.icon-name {
+  font-size: 20px;
+  position: absolute;
+  margin-top: 100px;
+  color: #0000;
+  transition: 0.5s ease-in-out;
+  font-weight: 300;
+}
+
+.slide {
+  color: #777;
+  margin-top: 170px;
+}
+
+.devicon-javascript-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-javascript-plain:hover {
+  color: rgb(237, 218, 28);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-html5-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-html5-plain:hover {
+  color: rgb(231, 96, 45);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-css3-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-css3-plain:hover {
+  color: rgb(37, 63, 221);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-jquery-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-jquery-plain:hover {
+  color: rgb(22, 100, 168);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-react-original {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-react-original:hover {
+  color: rgb(99, 221, 243);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-redux-original {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-redux-original:hover {
+  color: rgb(99, 221, 243);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-sass-original {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-sass-original:hover {
+  color: rgb(197, 94, 148);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-bootstrap-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-bootstrap-plain:hover {
+  color: rgb(110, 0, 239);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-python-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-python-plain:hover {
+  color: rgb(426, 190, 49);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-django-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-django-plain:hover {
+  color: rgb(7, 87, 61);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-nodejs-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-nodejs-plain:hover {
+  color: rgb(130, 203, 41);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-express-original {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-express-original:hover {
+  color: rgb(47, 47, 47);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-firebase-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-firebase-plain:hover {
+  color: rgb(235, 127, 20);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-mongodb-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-mongodb-plain:hover {
+  color: rgb(67, 154, 55);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-postgresql-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-postgresql-plain:hover {
+  color: rgb(51, 99, 141);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-bash-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-bash-plain:hover {
+  color: rgb(41, 48, 54);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-git-plain {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-git-plain:hover {
+  color: rgb(231, 71, 50);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-github-original {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-github-original:hover {
+  color: rgb(22, 20, 20);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-npm-original-wordmark {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-npm-original-wordmark:hover {
+  color: rgb(195, 45, 54);
+  animation: bounce 0.8s infinite;
+}
+
+.devicon-heroku-original {
+  font-size: 100px;
+  transition: 0.17s ease-in-out;
+}
+.devicon-heroku-original:hover {
+  color: rgb(95, 0, 171);
+  animation: bounce 0.8s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    padding-bottom: 10px;
+  }
+
+  50% {
+    margin-top: 15px;
+    padding-bottom: 25px;
+  }
+}

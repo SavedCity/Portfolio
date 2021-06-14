@@ -1,38 +1,211 @@
-.App {
+body {
+  padding-top: 0px;
+}
+
+/* ================= NAVBAR ================== */
+
+.navbar {
+  background: #0000;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 4;
+}
+
+.fa-moon {
+  position: fixed;
+  right: 29%;
+  font-size: 20px;
+  color: #fff;
+}
+.fa-sun {
+  position: fixed;
+  right: 29%;
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav-links {
+  position: fixed;
+  right: 0;
+  margin-right: 30px;
+}
+
+.nav-links > a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 12px;
+  text-shadow: 1px 1px 4px #0009;
+  font-weight: 600;
+}
+
+/* ================= PROFILE ================== */
+
+/* Reset. */
+* {
+  box-sizing: border-box;
+}
+
+.title-right {
+  font-size: 60px;
+  font-family: Oswald;
+  margin-left: 16%;
+  width: 100%;
+  color: #bbb;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+.title-left {
+  font-size: 100px;
+  font-family: josefin sans;
+  margin-left: 9%;
+  width: 100%;
+  color: #555;
+  text-align: left;
+}
+
+.desc-left {
+  font-size: 27px;
+  text-align: center;
+  left: 3%;
+  position: absolute;
+  top: 65%;
+  width: 70%;
+  color: #0008;
+}
+.desc-right {
+  font-size: 26px;
+  text-align: center;
+  right: 5%;
+  position: absolute;
+  top: 65%;
+  width: 60%;
+  color: #ddd;
+  font-weight: 400;
+}
+
+/* Panels. */
+.splitview {
+  position: relative;
+  width: 100%;
+  min-height: 45vw;
+  overflow: hidden;
+}
+
+.panel {
+  position: absolute;
+  width: 100vw;
+  min-height: 45vw;
+  overflow: hidden;
+}
+
+.panel .content {
+  position: absolute;
+  width: 100vw;
+  min-height: 45vw;
+  color: #fff;
+}
+
+.panel .description {
+  width: 50%;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.panel img {
+  /* box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.15); */
+  width: 35%;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bottom {
+  background-color: rgb(50, 50, 50);
+  z-index: 1;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0),
+    rgb(80, 80, 80),
+    rgb(255, 255, 255) 100%
+  );
+}
+
+.bottom .description {
+  right: 0%;
+}
+
+.top {
+  background-color: rgb(200, 200, 200);
+  z-index: 2;
+  width: 50vw;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(255, 255, 255) 100%
+  );
+
+  /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
+}
+
+.top .description {
+  left: 0%;
+}
+
+/* Handle. */
+.handle {
+  height: 100%;
+  position: absolute;
+  display: block;
+  background-color: #0003;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+}
+
+/* Skewed. */
+.skewed .handle {
+  top: 50%;
+  transform: rotate(30deg) translateY(-50%);
+  height: 200%;
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  transform-origin: top;
+}
+
+.skewed .top {
+  transform: skew(-30deg);
+  margin-left: -1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content {
+  transform: skew(30deg);
+  margin-left: 1000px;
+}
+
+/* .content {
+  margin-top: 50px;
+} */
+
+/* Responsive. */
+@media (max-width: 900px) {
+  body {
+    font-size: 75%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* ================= FOOTER ================== */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background: #b9b;
+  height: 80px;
 }
