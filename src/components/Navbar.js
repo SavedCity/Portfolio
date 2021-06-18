@@ -44,7 +44,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div className="navbar1">
+      <div id="navbar" className="navbar1">
         <div className="nav-links">
           <button className="flick-on" onClick={props.flickOn}>
             ANIMATION <span style={{ color: "#3f3f3f" }}>OFF</span>
@@ -88,10 +88,10 @@ export default function Navbar(props) {
             CONTACT
           </a>
         </div>
-        <a href="#about">
-          <i class="fas fa-chevron-up"></i>
-        </a>
       </div>
+      <a href="#navbar">
+        <i class="fas fa-chevron-up"></i>
+      </a>
     </>
   );
 }

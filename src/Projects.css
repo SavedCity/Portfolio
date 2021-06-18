@@ -94,10 +94,6 @@
   margin-bottom: 100px;
 }
 
-.swiper-slide.swiper-slide-active {
-  /* padding: 0 40px !important; */
-}
-
 .swiper-container:active {
   cursor: grabbing;
 }

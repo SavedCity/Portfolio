@@ -1,0 +1,387 @@
+@media (max-width: 600px) {
+  body {
+    margin-top: 80px;
+  }
+  .navbar1 {
+    background: #282828;
+    top: 0;
+    height: 80px;
+  }
+  .nav-links > a {
+    font-size: 15.3px;
+    padding: 0px 7px 0 7px;
+    /* margin: auto !important; */
+  }
+
+  .navbar2 {
+    height: 65px;
+    position: fixed;
+    top: -90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    transition: 0.5s;
+    background: #036666;
+    box-shadow: 0 0 20px #0004;
+    display: none;
+  }
+
+  .fa-chevron-up {
+    /* right: 12px !important; */
+    /* opacity: 1 !important; */
+    z-index: 9;
+  }
+
+  .navbar2 > div > a {
+    padding: 0 10px;
+    font-weight: 900;
+    font-size: 14px;
+  }
+
+  .flick-on,
+  .flick-off {
+    position: absolute;
+    right: 35%;
+    font-size: 13px;
+    bottom: 113%;
+    background: #999;
+    padding: 8px;
+    color: #333;
+    display: none !important;
+  }
+
+  .flick-on:hover,
+  .flick-off:hover {
+    color: #333;
+    letter-spacing: 1px;
+    right: 35%;
+  }
+
+  .title-left {
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 13%;
+  }
+
+  .desc-left {
+    font-size: 13px;
+    top: 57%;
+    width: 90%;
+    font-weight: 700;
+  }
+
+  .desc-left > p {
+    padding: 0;
+    margin: 1.5px 10px;
+  }
+
+  .title-right {
+    font-size: 20px;
+    margin-left: 0%;
+    width: 90%;
+    letter-spacing: 2px;
+  }
+
+  .desc-right {
+    font-size: 14px;
+    text-align: center;
+    right: 11%;
+    position: absolute;
+    top: 65%;
+    width: 90%;
+    color: #5f5f5f;
+    font-weight: 500;
+  }
+
+  .panel .img-left {
+    width: 35%;
+    top: 49%;
+    left: 60%;
+  }
+
+  .panel .img-right {
+    width: 35%;
+    top: 58%;
+    left: 30%;
+  }
+
+  /* SKILLS */
+
+  .skills-title {
+    font-size: 2.8rem;
+    width: 70%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+
+  .skills-desc {
+    font-size: 20px;
+    width: 93%;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+  }
+
+  .icons-div {
+    margin: 0px 10px;
+    margin-bottom: 50px;
+  }
+
+  .icons-div > div > i {
+    margin: 20px 20px 40px 20px;
+    padding-bottom: 25px;
+    font-size: 4.5rem;
+    animation: none !important;
+  }
+
+  .icon-name {
+    font-size: 20px;
+    margin-top: 117px;
+    color: #777;
+  }
+
+  #icon-line {
+    border-bottom: 1px solid #ddd0;
+  }
+
+  /* PROJECTS */
+
+  .projects-title {
+    font-size: 2.8rem;
+  }
+
+  .line {
+    width: 60%;
+    left: 34.5%;
+    margin-bottom: 70px;
+  }
+
+  .appear {
+    animation: appear 4s infinite ease-out;
+  }
+
+  @keyframes appear {
+    0%,
+    20% {
+      left: -80%;
+      height: 3px;
+      background: #999;
+    }
+    40%,
+    70% {
+      left: 18%;
+      height: 3px;
+      background: #999;
+    }
+    80%,
+    95% {
+      left: 37%;
+      height: 3px;
+      background: #999;
+    }
+    100% {
+      left: -50%;
+      height: 3px;
+      background: #999;
+    }
+  }
+
+  .projects-desc {
+    font-size: 20px;
+    width: 92%;
+  }
+
+  .slider-img {
+    width: 110%;
+    /* cursor: grab; */
+    padding: 40px 40px 20px 0px;
+    /* border-bottom: 1px solid #0003; */
+  }
+
+  .swiper-container {
+    width: 95%;
+    margin-bottom: 50px;
+  }
+
+  .swiper-button-prev {
+    display: none !important;
+  }
+  .swiper-button-next {
+    display: none !important;
+  }
+
+  .project-desc {
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    margin: 0;
+    margin-right: 30px;
+    font-weight: 500;
+    color: #444;
+    letter-spacing: 1px;
+  }
+
+  .languages-used {
+    font-size: 1.1rem;
+  }
+
+  .languages-used > i {
+    font-size: 1.1rem !important;
+    margin-left: 0 15px;
+  }
+
+  .project-links-div {
+    background-color: #3f3f3f;
+    width: 80%;
+    position: absolute;
+    top: -20px;
+    left: 10%;
+    height: 50px;
+  }
+
+  .project-links-div > a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+    font-family: Oswald;
+  }
+
+  /* RESUME */
+
+  .resume-title {
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    padding: 0 20px;
+  }
+
+  .resume-div {
+    padding-bottom: 20px;
+  }
+
+  .why-hire-me {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .resume-photo {
+    width: 75%;
+  }
+
+  .view-button {
+    padding: 17px 40px;
+    margin-right: 0px;
+    background: #16899a;
+    font-size: 1.1rem;
+  }
+
+  .resume-modal-content {
+    width: 95%;
+  }
+
+  .resume-modal-photo {
+    padding: 30px 0 30px 0;
+    width: 95%;
+    height: 550px;
+  }
+
+  .close-resume-modal {
+    font-size: 35px;
+    margin-top: 8px;
+  }
+
+  .modal-header > h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: Josefin Sans;
+    font-weight: 400;
+    margin: 25px 0;
+  }
+
+  /* CONTACT */
+
+  #contact {
+    padding-top: 50px !important;
+    margin-bottom: 100px;
+  }
+
+  .contact-letters {
+    margin: 0 10px;
+    font-size: 2rem;
+    margin-bottom: 40px !important;
+  }
+
+  .letter {
+    height: 25px;
+    width: 20px;
+    border-radius: 50px;
+    margin: 0 10px;
+    border: 2.8px solid rgb(148, 89, 37);
+  }
+
+  #contact-m-letter {
+    margin-left: 30px !important;
+  }
+
+  @keyframes span {
+    0%,
+    30% {
+      margin: 0 10px;
+    }
+    70%,
+    100% {
+      margin: 0 5px;
+    }
+  }
+  @keyframes letter {
+    0%,
+    30% {
+      width: 25px;
+      border: 2.5px solid rgb(148, 89, 37);
+    }
+    70%,
+    100% {
+      width: 14vw;
+      border: 2.5px solid rgb(148, 89, 37);
+    }
+  }
+
+  .contact-container {
+    max-width: 400px;
+  }
+
+  .tel-link {
+    display: none;
+  }
+
+  .linkedin-link {
+    display: none;
+  }
+  .email-link {
+    display: none;
+  }
+  .github-link {
+    display: none;
+  }
+
+  .tel-mobile {
+    display: block;
+    cursor: pointer !important;
+  }
+
+  .linkedin-mobile {
+    display: block;
+    cursor: pointer !important;
+  }
+  .email-mobile {
+    display: block;
+    cursor: pointer !important;
+  }
+  .github-mobile {
+    display: block;
+    cursor: pointer !important;
+  }
+}

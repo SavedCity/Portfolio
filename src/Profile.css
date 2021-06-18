@@ -224,10 +224,3 @@
   transform: skew(30deg);
   margin-left: 1000px;
 }
-
-/* Responsive. */
-@media (max-width: 900px) {
-  body {
-    font-size: 75%;
-  }
-}

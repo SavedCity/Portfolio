@@ -23,7 +23,12 @@ export default function Contact(props) {
         <div className="contact-contacts center-column">
           <h2 className="center">
             <i className="fas fa-phone"></i>
-            (917) 736-0925
+            <a className="tel-link" style={{ borderBottom: "none" }}>
+              (917) 736-0925
+            </a>
+            <a className="tel-mobile" href="tel:9177360925">
+              (917) 736-0925
+            </a>
           </h2>
           <h2 className="center">
             <i className="fab fa-linkedin"></i>
@@ -37,6 +42,13 @@ export default function Contact(props) {
                 Visit my LinkedIn
               </a>
             </a>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/andy-checo/"
+              className="linkedin-mobile"
+            >
+              LinkedIn
+            </a>
           </h2>
           <h2 className="center">
             <i className="fas fa-envelope"></i>
@@ -48,6 +60,9 @@ export default function Contact(props) {
               >
                 Email Me
               </a>
+            </a>
+            <a href="mailto:andycheco25@hotmail.com" className="email-mobile">
+              Email
             </a>
           </h2>
           <h2 className="center">
@@ -61,6 +76,13 @@ export default function Contact(props) {
               >
                 Visit my Github
               </a>
+            </a>
+            <a
+              target="blank"
+              href="https://github.com/SavedCity"
+              className="github-mobile"
+            >
+              Github
             </a>
           </h2>
         </div>

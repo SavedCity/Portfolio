@@ -243,3 +243,17 @@
   font-size: 2rem;
   color: rgb(148, 89, 37);
 }
+
+.tel-mobile {
+  display: none;
+}
+
+.linkedin-mobile {
+  display: none;
+}
+.email-mobile {
+  display: none;
+}
+.github-mobile {
+  display: none;
+}
