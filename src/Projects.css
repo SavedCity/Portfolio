@@ -156,6 +156,16 @@
   margin: 0 0 15px 0;
 }
 
+.portfolio {
+  font-size: 1.8rem;
+  font-family: josefin sans;
+  margin: 0 0 15px 0;
+  background: linear-gradient(to bottom, #7ae572, #7af5b2, #fff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px #4443;
+}
+
 .reviewt {
   color: #282828;
   text-shadow: 0 0 5px yellow;

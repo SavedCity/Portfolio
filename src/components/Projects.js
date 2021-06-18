@@ -7,6 +7,7 @@ import myhome from "../images/myhome.png";
 import reviewt from "../images/reviewt.png";
 import average from "../images/average.png";
 import enoughhunger from "../images/enoughhunger.png";
+import portfolio from "../images/andy-portfolio.png";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -194,6 +195,64 @@ export default function Projects(props) {
                 className="devicon-css3-plain colored"
               ></i>{" "}
               JWT - Bcrypt - Heroku{" "}
+              <i
+                style={{ fontSize: "25px" }}
+                class="devicon-heroku-original colored"
+              ></i>
+            </h3>
+          </SwiperSlide>
+
+          {/* ==================== PORTFOLIO ==================== */}
+
+          <SwiperSlide
+            onMouseEnter={() => {
+              setLinksClass(true);
+            }}
+            onMouseLeave={() => {
+              setLinksClass(false);
+            }}
+            className="center-column"
+            tag="ul"
+            key={"slide"}
+          >
+            <img className="slider-img" src={portfolio} />
+            <h2 className="portfolio">Portfolio</h2>
+
+            <p className="project-desc">
+              Not only did I want another project in the books but CSS being one
+              of my favorite things about coding I had to enjoy myself. Lots of
+              fun building this portfolio. (ps. turning off animation won't hurt
+              my feelings, just don't wanna hurt your eyes.)
+            </p>
+            <div className={lowerLinks}>
+              <a target="blank" href="https://github.com/SavedCity/Portfolio">
+                Github
+              </a>
+            </div>
+            <h3 className="languages-used">
+              React{" "}
+              <i
+                style={{ fontSize: "25px" }}
+                class="devicon-react-original colored"
+              >
+                {" "}
+              </i>
+              Javascript{" "}
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-javascript-plain colored"
+              ></i>{" "}
+              HTML{" "}
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-html5-plain colored"
+              ></i>{" "}
+              Swiper - CSS{" "}
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-css3-plain colored"
+              ></i>{" "}
+              Heroku{" "}
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-heroku-original colored"
