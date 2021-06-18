@@ -1,0 +1,211 @@
+.resume-container {
+  margin-top: 50px;
+  padding-top: 0;
+  border-top: 1px solid #0003;
+}
+
+.resume-div {
+  border-bottom: 1px solid #0003;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 4rem;
+  font-family: Josefin Sans;
+  letter-spacing: 13px;
+  font-weight: 400;
+  /* padding-top: 70px; */
+  color: #3b3b3b;
+  cursor: default;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  /* background: linear-gradient(to bottom, #ff6d00, #dc2f02, #fff 98%); */
+
+  /* border-left: 1px solid #1a659e;
+  border-right: 1px solid #1a659e; */
+
+  /* width: 70%; */
+  background: linear-gradient(to right, #1a659e 0, #33a1fd 50%, #eee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: 0;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  white-space: nowrap;
+  padding: 0 20px;
+}
+
+.shine {
+  animation: shine 2.5s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background: linear-gradient(to right, #1a659e 0, #fff9 10%, #1a659e 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 0;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    white-space: nowrap;
+    background-position: -50px;
+  }
+
+  100% {
+    background: linear-gradient(to right, #1a659e 0, #fff 10%, #1a659e 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 0;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    white-space: nowrap;
+    background-position: 340px;
+  }
+}
+
+.why-hire-me {
+  background: #16899a55;
+  padding: 30px;
+  border-radius: 1px;
+  /* margin-bottom: 100px; */
+  width: 30%;
+  box-shadow: 8px 8px 10px #0002;
+}
+
+.resume-desc-title {
+  font-family: montserrat;
+  font-weight: 900;
+  color: #111;
+  margin: 5px 0 10px 0;
+  font-size: 2rem;
+}
+
+.resume-desc {
+  color: #333;
+  font-weight: 400;
+  font-family: fira sans;
+  margin: 10px;
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.resume-photo {
+  /* opacity: 0.9; */
+  width: 52%;
+  margin: 0 0 20px 0;
+  box-shadow: 8px 8px 10px #0002;
+}
+
+.resume-buttons {
+  margin: 0px 0 50px 0;
+}
+
+.view-button {
+  border: none;
+  padding: 10px 25px;
+  margin-right: 15px;
+  background: #16899a;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: 800;
+  letter-spacing: 3px;
+  box-shadow: 4px 4px 7px #0004;
+}
+.view-button:hover {
+  background: #16a9ba;
+}
+
+/* The Modal (background) */
+.resume-modal-class {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 7; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.resume-modal-content {
+  position: relative;
+  background-color: #f1f1f1;
+  margin: auto;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+
+.resume-modal-photo {
+  padding: 30px 0 30px 0;
+  width: 80%;
+  height: 1000px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close-resume-modal {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+  margin-top: 15px;
+}
+
+.close-resume-modal:hover,
+.close-resume-modal:focus {
+  color: #111;
+  text-decoration: none;
+  background: #ddd;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgb(22, 55, 100);
+  color: #fff;
+}
+
+.modal-header > h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  margin: 25px 0;
+}

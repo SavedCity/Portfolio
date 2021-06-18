@@ -1,33 +1,65 @@
 .skills-container {
   /* background-color: #0008; */
+  /* margin-top: 70px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .skills-title {
   text-align: center;
+  font-size: 3.8rem;
+  font-family: Josefin Sans;
+  letter-spacing: 15px;
+  font-weight: 500;
+  width: 70%;
+  padding-top: 20px;
+  /* color: #52b69a; */
+  cursor: default;
+  margin-bottom: 10px;
+  margin-top: 100px;
+  background: linear-gradient(to bottom, #036666, #007f5f, #fff 98%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* text-shadow: 4px 4px 7px #0004; */
+  /* -webkit-text-stroke: 1px #0002; */
 }
 
-.icons-container {
+.skills-desc {
+  font-size: 26px;
+  width: 65%;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: overpass;
+  margin-bottom: 60px;
+  color: #555;
+}
+
+.icons-div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   /* background: #0003; */
   margin: 0 200px;
   align-items: center;
+  /* width: 50% */
+  margin-bottom: 100px;
 }
-.icons-container > div {
+.icons-div > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.icons-container > div > i {
-  margin: 30px;
+.icons-div > div > i {
+  margin: 35px;
   padding-bottom: 10px;
   z-index: 1;
   background: #fff;
-  width: 130px;
+  width: 100px;
   text-align: center;
-  color: #99d98c;
+  /* color: #69a95c; */
 }
 
 #icon {
@@ -57,6 +89,7 @@
 .devicon-javascript-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(237, 218, 28, 0.8);
 }
 .devicon-javascript-plain:hover {
   color: rgb(237, 218, 28);
@@ -66,6 +99,7 @@
 .devicon-html5-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(231, 96, 45, 0.8);
 }
 .devicon-html5-plain:hover {
   color: rgb(231, 96, 45);
@@ -75,6 +109,7 @@
 .devicon-css3-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(37, 63, 221, 0.8);
 }
 .devicon-css3-plain:hover {
   color: rgb(37, 63, 221);
@@ -84,6 +119,7 @@
 .devicon-jquery-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(22, 100, 168, 0.8);
 }
 .devicon-jquery-plain:hover {
   color: rgb(22, 100, 168);
@@ -93,6 +129,7 @@
 .devicon-react-original {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(99, 221, 243, 0.8);
 }
 .devicon-react-original:hover {
   color: rgb(99, 221, 243);
@@ -102,6 +139,7 @@
 .devicon-redux-original {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(88, 55, 136, 0.8);
 }
 .devicon-redux-original:hover {
   color: rgb(88, 55, 136);
@@ -111,6 +149,7 @@
 .devicon-sass-original {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(197, 94, 148, 0.8);
 }
 .devicon-sass-original:hover {
   color: rgb(197, 94, 148);
@@ -120,6 +159,7 @@
 .devicon-bootstrap-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(110, 0, 239, 0.8);
 }
 .devicon-bootstrap-plain:hover {
   color: rgb(110, 0, 239);
@@ -129,6 +169,7 @@
 .devicon-python-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(426, 190, 49, 0.8);
 }
 .devicon-python-plain:hover {
   color: rgb(426, 190, 49);
@@ -138,6 +179,7 @@
 .devicon-django-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(7, 87, 61, 0.8);
 }
 .devicon-django-plain:hover {
   color: rgb(7, 87, 61);
@@ -147,6 +189,7 @@
 .devicon-nodejs-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(130, 203, 41, 0.8);
 }
 .devicon-nodejs-plain:hover {
   color: rgb(130, 203, 41);
@@ -156,6 +199,7 @@
 .devicon-express-original {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(47, 47, 47, 0.8);
 }
 .devicon-express-original:hover {
   color: rgb(47, 47, 47);
@@ -165,6 +209,7 @@
 .devicon-firebase-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(235, 127, 20, 0.8);
 }
 .devicon-firebase-plain:hover {
   color: rgb(235, 127, 20);
@@ -174,6 +219,7 @@
 .devicon-mongodb-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(67, 154, 55, 0.8);
 }
 .devicon-mongodb-plain:hover {
   color: rgb(67, 154, 55);
@@ -183,6 +229,7 @@
 .devicon-postgresql-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(51, 99, 141, 0.8);
 }
 .devicon-postgresql-plain:hover {
   color: rgb(51, 99, 141);
@@ -192,6 +239,7 @@
 .devicon-bash-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(41, 48, 54, 0.8);
 }
 .devicon-bash-plain:hover {
   color: rgb(41, 48, 54);
@@ -201,6 +249,7 @@
 .devicon-git-plain {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(231, 71, 50, 0.8);
 }
 .devicon-git-plain:hover {
   color: rgb(231, 71, 50);
@@ -210,6 +259,7 @@
 .devicon-github-original {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(22, 20, 20, 0.8);
 }
 .devicon-github-original:hover {
   color: rgb(22, 20, 20);
@@ -219,6 +269,7 @@
 .devicon-npm-original-wordmark {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(195, 45, 54, 0.8);
 }
 .devicon-npm-original-wordmark:hover {
   color: rgb(195, 45, 54);
@@ -228,6 +279,7 @@
 .devicon-heroku-original {
   font-size: 100px;
   transition: 0.17s ease-in-out;
+  color: rgba(95, 0, 171, 0.8);
 }
 .devicon-heroku-original:hover {
   color: rgb(95, 0, 171);

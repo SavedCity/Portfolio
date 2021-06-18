@@ -18,22 +18,26 @@ export default function Navbar(props) {
     let resume = document.querySelector(".resume-link");
     let contact = document.querySelector(".contact-link");
 
-    if (window.scrollY < 680) {
+    if (window.scrollY < 758) {
       about2.style.color = "#fff";
       skills.style.color = "#fff9";
-    } else if (window.scrollY > 680 && window.scrollY < 930) {
+    } else if (window.scrollY > 758 && window.scrollY < 1664) {
       about2.style.color = "#fff9";
       skills.style.color = "#fff";
       projects.style.color = "#fff9";
-    } else if (window.scrollY > 930 && window.scrollY < 1530) {
+    } else if (window.scrollY > 1664 && window.scrollY < 2950) {
       skills.style.color = "#fff9";
       projects.style.color = "#fff";
+      resume.style.color = "#fff9";
+    } else if (window.scrollY > 2950 && window.scrollY < 3880) {
+      resume.style.color = "#fff";
+      projects.style.color = "#fff9";
+      contact.style.color = "#fff9";
+    } else if (window.scrollY > 3880) {
+      contact.style.color = "#fff";
+      resume.style.color = "#fff9";
     }
   };
-
-  function skillScroll() {
-    window.scrollY = 680;
-  }
 
   return (
     <>
@@ -46,38 +50,38 @@ export default function Navbar(props) {
             ANIMATION <span style={{ color: "#f9c74f" }}>ON</span>
           </button>
 
-          <a className="about-link" href="">
+          <a className="about-link" href="#about">
             ABOUT ME
           </a>
 
-          <a href="">SKILLS</a>
+          <a href="#skills">SKILLS</a>
 
-          <a href="">PROJECTS</a>
+          <a href="#projects">PROJECTS</a>
 
-          <a href="">RESUME</a>
+          <a href="#resume">RESUME</a>
 
-          <a href="">CONTACT</a>
+          <a href="#contact">CONTACT</a>
         </div>
       </div>
       <div className="navbar2">
         <div className="nav-links">
-          <a className="about-link2" href="">
+          <a className="about-link2" href="#about">
             ABOUT ME
           </a>
 
-          <a className="skills-link" href="">
+          <a className="skills-link" href="#skills">
             SKILLS
           </a>
 
-          <a className="projects-link" href="">
+          <a className="projects-link" href="#projects">
             PROJECTS
           </a>
 
-          <a className="resume-link" href="">
+          <a className="resume-link" href="#resume">
             RESUME
           </a>
 
-          <a className="contact-link" href="">
+          <a className="contact-link" href="#contact">
             CONTACT
           </a>
         </div>

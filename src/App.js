@@ -1,24 +1,43 @@
 import "./App.css";
 import "./Skills.css";
+import "./Profile.css";
+import "./Projects.css";
+import "./Resume.css";
+import "./Contact.css";
 
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
 import Skills from "../src/components/Skills";
+import Projects from "../src/components/Projects";
+import Resume from "../src/components/Resume";
+import Contact from "../src/components/Contact";
 
 import Andy from "../src/images/andy.png";
 import AndyAndYoshi from "../src/images/andy-and-yoshi.png";
-import Andy2 from "../src/images/andy2.png";
 
 import React, { useState } from "react";
 
 export default function App() {
   const [flicker, setFlicker] = useState(true);
+  const [appear, setAppear] = useState(true);
+  const [shine, setShine] = useState(true);
+  const [spread, setSpread] = useState(true);
+  const [stretch, setStretch] = useState(true);
+
   const flick = flicker ? "title-left flicker" : "title-left";
+  const lineSlide = appear ? "line appear" : "line";
+  const shineClass = shine ? "resume-title shine" : "resume-title";
+  const lettersClass = spread ? "contact-letters spread" : "contact-letters";
+  const letterClass = stretch ? "letter extend" : "letter";
 
   function flickOn() {
     let offButton = document.querySelector(".flick-off");
     let onButton = document.querySelector(".flick-on");
     setFlicker(true);
+    setAppear(true);
+    setShine(true);
+    setSpread(true);
+    setStretch(true);
 
     onButton.style.display = "none";
     offButton.style.display = "block";
@@ -26,8 +45,11 @@ export default function App() {
   function flickOff() {
     let offButton = document.querySelector(".flick-off");
     let onButton = document.querySelector(".flick-on");
-
     setFlicker(false);
+    setAppear(false);
+    setShine(false);
+    setSpread(false);
+    setStretch(false);
 
     offButton.style.display = "none";
     onButton.style.display = "block";
@@ -57,7 +79,7 @@ export default function App() {
     });
   });
   return (
-    <div className="App">
+    <div id="about" className="App">
       <Navbar flickOn={flickOn} flickOff={flickOff} />
 
       <div class="splitview skewed">
@@ -67,7 +89,7 @@ export default function App() {
               <h1 className="title-right">Software Developer</h1>
               <p className="desc-right">
                 With a true passion in this field I am willing to go beyond
-                anyone's expectations to show off my skill and worth.
+                anyone's expectations to show off my skills and worth.
               </p>
             </div>
 
@@ -79,11 +101,13 @@ export default function App() {
           <div class="content">
             <div class="description">
               <h1 className={flick}>Andy Checo</h1>
-              <p className="desc-left">
-                My family is my light. They take up a huge percentage of my
-                happiness. That makes them one of the reasons why I am so
-                dedicated on going forward.
-              </p>
+              <div className="desc-left center-column">
+                <p>Love all coding stuff</p>
+                <p>Video game enthusiast</p>
+                <p>Soon to be dad</p>
+                <p>Outdoors/Active guy</p>
+                <p>Bears, beets, battlestar galactica</p>
+              </div>
             </div>
 
             <img className="img-left" src={AndyAndYoshi} alt="Duotone" />
@@ -94,9 +118,9 @@ export default function App() {
       </div>
 
       <Skills />
-      <Skills />
-      <Skills />
-
+      <Projects lineSlide={lineSlide} />
+      <Resume shineClass={shineClass} />
+      <Contact lettersClass={lettersClass} letterClass={letterClass} />
       <Footer />
     </div>
   );

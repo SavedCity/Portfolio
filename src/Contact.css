@@ -1,0 +1,245 @@
+#contact {
+  padding-top: 100px !important;
+  margin-bottom: 100px;
+}
+
+.contact-letters {
+  margin: 0 15px;
+  line-height: 0.7;
+  text-shadow: 3px 3px 6px #0003;
+  font-size: 52px;
+  /* background: linear-gradient(to bottom, #006494, #0582ca, #00a6fb, 100%); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
+  color: rgb(148, 89, 37);
+  margin-bottom: 60px !important;
+}
+
+.spread {
+  animation: span 2.5s ease-in infinite alternate;
+}
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.letter {
+  display: inline-flex;
+  height: 40px;
+  width: 32px;
+  border: 4.8px solid rgb(148, 89, 37);
+  border-radius: 50px;
+  box-shadow: 3px 3px 6px #0003, inset 3px 3px 6px #0003;
+  font-size: 52px;
+  margin: 0 15px;
+}
+
+.extend {
+  animation: letter 2.5s ease-in-out infinite alternate;
+}
+
+#contact-m-letter {
+  margin-left: 50px !important;
+}
+
+@keyframes span {
+  0%,
+  30% {
+    margin: 0 15px;
+  }
+  70%,
+  100% {
+    margin: 0 5px;
+  }
+}
+@keyframes letter {
+  0%,
+  30% {
+    width: 32px;
+    border: 3.8px solid rgb(148, 89, 37);
+  }
+  70%,
+  100% {
+    width: 8vw;
+    border: 3.8px solid rgb(148, 89, 37);
+  }
+}
+
+.contact-container {
+  box-shadow: 8px 8px 10px #0003;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-top: 20px;
+  background: rgba(148, 89, 37, 0.3);
+}
+
+.contact-card-name {
+  border-bottom: 2px solid #0003;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* color: #eee !important; */
+  /* background: #0004; */
+}
+
+.contact-container > h1 {
+  font-family: montserrat;
+  color: #333;
+}
+
+.sunglasses-img {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.contact-contacts {
+  align-items: flex-start !important;
+  margin: 4px 0;
+  /* background: #fff7; */
+}
+
+.contact-contacts > h2 {
+  margin: 15px 0;
+  font-family: fira sans;
+  letter-spacing: 2px;
+  color: #333;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.contact-contacts > h2 > a {
+  text-decoration: none;
+  color: #333;
+  border-bottom: 2px solid #0009;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.linkedin-link {
+  position: relative;
+}
+
+.linkedin-link .linkedin-tooltip {
+  visibility: hidden;
+  width: 250px;
+  background-color: #383838;
+  color: #eee;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 104%;
+  font-family: fira sans;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.linkedin-tooltip:hover {
+  background: #282828;
+}
+
+.linkedin-link .linkedin-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #282828 transparent transparent;
+}
+
+.linkedin-link:hover .linkedin-tooltip {
+  visibility: visible;
+}
+
+.email-link {
+  position: relative;
+}
+
+.email-link .email-tooltip {
+  visibility: hidden;
+  width: 200px;
+  background-color: #383838;
+  color: #eee;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 102%;
+  font-family: fira sans;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.email-tooltip:hover {
+  background: #282828;
+}
+
+.email-link .email-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #282828 transparent transparent;
+}
+
+.email-link:hover .email-tooltip {
+  visibility: visible;
+}
+
+.github-link {
+  position: relative;
+}
+
+.github-link .github-tooltip {
+  visibility: hidden;
+  width: 230px;
+  background-color: #383838;
+  color: #eee;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  font-family: fira sans;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.github-tooltip:hover {
+  background: #282828;
+}
+
+.github-link .github-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent #282828 transparent transparent;
+}
+
+.github-link:hover .github-tooltip {
+  visibility: visible;
+}
+
+.contact-contacts > h2 > i {
+  margin: 0 20px 0 15px;
+  font-size: 2rem;
+  color: rgb(148, 89, 37);
+}
