@@ -18,7 +18,7 @@ export default function Projects(props) {
     : "project-links-div";
 
   return (
-    <div id="projects mobile-croll">
+    <div id="projects" className="mobile-scroll">
       <div className="project-top-div">
         <h1 className="projects-title">PROJECTS</h1>
         <div className={props.lineSlide}></div>
