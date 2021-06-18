@@ -85,6 +85,28 @@ html {
   color: #fff !important;
 }
 
+.fa-chevron-up {
+  color: #fff;
+  position: fixed;
+  right: -52px;
+  bottom: 20px;
+  font-size: 2rem;
+  background: #0005;
+  border-radius: 50px;
+  padding: 10px 12px;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.fa-chevron-up:hover {
+  background: #0009;
+}
+
+.show-arrow {
+  right: 12px;
+  opacity: 1;
+}
+
 /* ================= FOOTER ================== */
 
 .footer {

@@ -17,6 +17,7 @@ export default function Navbar(props) {
     let projects = document.querySelector(".projects-link");
     let resume = document.querySelector(".resume-link");
     let contact = document.querySelector(".contact-link");
+    let arrow = document.querySelector(".fa-chevron-up");
 
     if (window.scrollY < 758) {
       about2.style.color = "#fff";
@@ -25,10 +26,12 @@ export default function Navbar(props) {
       about2.style.color = "#fff9";
       skills.style.color = "#fff";
       projects.style.color = "#fff9";
+      arrow.classList.remove("show-arrow");
     } else if (window.scrollY > 1664 && window.scrollY < 2950) {
       skills.style.color = "#fff9";
       projects.style.color = "#fff";
       resume.style.color = "#fff9";
+      arrow.classList.add("show-arrow");
     } else if (window.scrollY > 2950 && window.scrollY < 3880) {
       resume.style.color = "#fff";
       projects.style.color = "#fff9";
@@ -85,6 +88,9 @@ export default function Navbar(props) {
             CONTACT
           </a>
         </div>
+        <a href="#about">
+          <i class="fas fa-chevron-up"></i>
+        </a>
       </div>
     </>
   );

@@ -69,7 +69,7 @@
   100% {
     color: #fff;
     text-shadow: 0 0 10px #ffba08, 0 0 20px #ffba08, 0 0 40px #ffba08,
-      0 0 80px #ffba08, 0 0 160px #ffba08;
+      0 0 160px #ffba08;
   }
 }
 
@@ -99,8 +99,7 @@
   color: #eee;
   font-weight: 500;
   letter-spacing: 4px;
-  text-shadow: 0 0 10px #52b69a, 0 0 20px #52b69a, 0 0 40px #52b69a,
-    0 0 80px #52b69a, 0 0 160px #52b69a;
+  text-shadow: 0 0 20px #25a18e;
 }
 
 .desc-right {
