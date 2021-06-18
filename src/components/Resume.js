@@ -26,7 +26,7 @@ export default function Resume(props) {
   function allowScroll() {}
 
   return (
-    <div id="resume">
+    <div id="resume" className="mobile-croll">
       <div className="resume-container center-column">
         <h1 className={props.shineClass}>RESUME</h1>
       </div>

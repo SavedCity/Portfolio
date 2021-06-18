@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="footer center">
+    <div className="footer center mobile-croll">
       <h1 className="footer-title">
         Built and designed by <span style={{ color: "#333" }}>Andy Checo </span>{" "}
         2021

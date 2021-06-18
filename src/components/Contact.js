@@ -3,7 +3,7 @@ import AndySunglasses from "../images/andy-sunglasses.jpg";
 
 export default function Contact(props) {
   return (
-    <div id="contact">
+    <div id="contact" className="mobile-croll">
       <div className="contact-main">
         <span className={props.lettersClass}>C</span>
         <span className={props.letterClass}></span>

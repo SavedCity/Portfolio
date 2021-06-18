@@ -6,7 +6,7 @@ export default function Skills() {
   const line = showName ? "icon-line" : "icon";
 
   return (
-    <div id="skills" className="skills-container">
+    <div id="skills" className="skills-container mobile-croll">
       <h1 className="skills-title">SKILLS</h1>
 
       <p className="skills-desc">

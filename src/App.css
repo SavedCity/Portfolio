@@ -1,3 +1,7 @@
+.mobile-croll {
+  --webkit-overflow-scrolling: touch;
+}
+
 .center-column {
   display: flex;
   justify-content: center;
@@ -11,6 +15,10 @@
   align-items: flex-start;
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 html {

@@ -44,7 +44,7 @@ export default function Navbar(props) {
 
   return (
     <>
-      <div id="navbar" className="navbar1">
+      <div id="navbar" className="navbar1 mobile-croll">
         <div className="nav-links">
           <button className="flick-on" onClick={props.flickOn}>
             ANIMATION <span style={{ color: "#3f3f3f" }}>OFF</span>

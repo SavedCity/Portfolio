@@ -1,6 +1,7 @@
 @media (max-width: 600px) {
   body {
     margin-top: 80px;
+    --webkit-overflow-scrolling: touch;
   }
   .navbar1 {
     background: #282828;

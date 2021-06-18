@@ -80,7 +80,7 @@ export default function App() {
     });
   });
   return (
-    <div id="about" className="App">
+    <div id="about" className="App mobile-croll">
       <Navbar flickOn={flickOn} flickOff={flickOff} />
 
       <div class="splitview skewed">
