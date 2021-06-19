@@ -59,7 +59,9 @@ export default function Navbar(props) {
 
           <a href="#skills">SKILLS</a>
 
-          <a href="#projects">PROJECTS</a>
+          <a className="projects-link1" href="#projects">
+            PROJECTS
+          </a>
 
           <a href="#resume">RESUME</a>
 

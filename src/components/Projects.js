@@ -55,11 +55,16 @@ export default function Projects(props) {
 
             <h2 className="spamazon">Spamazon</h2>
             <p className="project-desc">
-              Spamazon is an e-commerce application with a lot of unique
-              features in it including, but not limited to, full CRUD, add to
-              cart functionality, mock purchase, full authentication, and more!
-              And if that didn't catch your eye we have an unlimited stock on
-              all products!
+              Spamazon is an e-commerce application using React class
+              components. I love using React because of how fast it allows you
+              to browse through and the unlimited amount of things you can do
+              with it. Using authentication with Firebase for the first time was
+              surprisingly a very simple task. I was also happy about using
+              another database like Postgres and using tables to store my data
+              for a change after using MongoDB in the past. Lastly, using a high
+              programming language like Python fit very well with the backend of
+              this project. Definitely would be using it in the future because
+              it is a time saver.
             </p>
             <div className={lowerLinks}>
               <a
@@ -141,13 +146,25 @@ export default function Projects(props) {
             key={"slide"}
           >
             <img className="slider-img" src={myhome} />
-            <h2 className="myhome">myHome</h2>
+            <h2 className="myhome">
+              myHome |{" "}
+              <span
+                style={{ color: "#080", fontSize: "14px", fontWeight: "900" }}
+              >
+                Ongoing project
+              </span>
+            </h2>
 
             <p className="project-desc">
-              This idea came from my wife and I searching for homes. In 'myHome'
-              you can search for southern state homes, (eg. Texas, Florida,
-              South Carolina, etc.) with a minimilist style. Looking for homes
-              down where the weather's a little nice? Start here!
+              In 'myHome' you can search for southern state houses and browse
+              through their details. Wanting to learn more of React, I built
+              this project using React functional components, React router,
+              hooks, and context. First time using React router and I absolutely
+              loved the feel of navigating with speed. Using a lot of different
+              hooks surprised me because of the amount of things you can achieve
+              with them. What challenged me the most was using context to pass
+              data around. It is wonderfully useful but it for sure takes some
+              learning and getting used to which I enjoy.
             </p>
             <div className={lowerLinks}>
               <a
@@ -219,10 +236,13 @@ export default function Projects(props) {
             <h2 className="portfolio">Portfolio</h2>
 
             <p className="project-desc">
-              Not only did I want another project in the books but CSS being one
-              of my favorite things about coding I had to enjoy myself. Lots of
-              fun building this portfolio. (ps. turning off animation won't hurt
-              my feelings, just don't wanna hurt your eyes.)
+              Wanting a one page portfolio did not have me debating what I was
+              going to build it with. Using React components helps me have
+              everything very organized and clear minded. Also, CSS being one of
+              my favorite languages and having a background in digital art, I
+              wanted to really play around with some of the things CSS can get
+              done and dive a little deeper into animations. All that and
+              keeping it simple at the same time.
             </p>
             <div className={lowerLinks}>
               <a target="blank" href="https://github.com/SavedCity/Portfolio">
@@ -279,8 +299,10 @@ export default function Projects(props) {
             <p className="project-desc">
               My main goal in this app was for users to really get something out
               of it. Reviewt is an app where you can go in and post a product
-              you own and leave a review on it. Good or bad. Just let it all out
-              by sharing your thoughts with others.
+              you own and leave a review on it. Using ejs files can get very
+              messy for me sometimes so keeping all of those intact and clean
+              was a bit challenging at first. I can really say I got what I
+              wanted out of this project and what I was wanting to implement.
             </p>
             <div className={lowerLinks}>
               <a
@@ -300,7 +322,7 @@ export default function Projects(props) {
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
               ></i>{" "}
-              Jquery{" "}
+              jQuery{" "}
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-jquery-plain colored"
@@ -350,8 +372,11 @@ export default function Projects(props) {
             <h2 className="enough">Enough with cravings</h2>
 
             <p className="project-desc">
-              Another passion of mine is food, but whose isn't? Get searching
-              for something delicious and satisfy your cravings!
+              Another passion of mine is food, but whose isn't? Making API calls
+              was something new for me when building this but the amount of data
+              that you can get from APIs are incredibly useful and awesome to go
+              through. I also really admire jQuery, if there is way to shorten
+              your code and get some simplicity from it then I'm all for it!
             </p>
             <div className={lowerLinks}>
               <a
@@ -374,7 +399,7 @@ export default function Projects(props) {
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
               ></i>{" "}
-              Jquery{" "}
+              jQuery{" "}
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-jquery-plain colored"
@@ -412,8 +437,11 @@ export default function Projects(props) {
             <p className="project-desc">
               Inspired from Medium.com this app is meant to post articles on
               whatever you may have in mind. A lot of frustruation came when
-              building it. It may not be as cool as Medium.com but at least
-              it's... 'Average'{" "}
+              building this project because it was my first time using React and
+              still had a lot to take in. Even though it was a challenge to get
+              everything done and still have some things wanting to implement,
+              it was a definite learning curve which, again, I love. It may not
+              be as cool as Medium.com but at least it's... 'Average'{" "}
             </p>
             <div className={lowerLinks}>
               <a

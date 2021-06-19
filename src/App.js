@@ -104,7 +104,7 @@ export default function App() {
             <div class="description">
               <h1 className={flick}>Andy Checo</h1>
               <div className="desc-left center-column">
-                <p>Love all coding stuff</p>
+                <p>Love continuous work on projects</p>
                 <p>Video game enthusiast</p>
                 <p>Soon to be dad</p>
                 <p>Outdoors/Active guy</p>
