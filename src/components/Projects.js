@@ -23,11 +23,12 @@ export default function Projects(props) {
         <h1 className="projects-title">PROJECTS</h1>
         <div className={props.lineSlide}></div>
         <p className="projects-desc">
-          The projects I've built are a representaion of the dedication I put in
-          them.{" "}
-          <span style={{ color: "#32967a", fontWeight: "700" }}>Note</span> that
-          these were built in just a week or less of time so there are still
-          lots of other features I am wanting to implement in them.
+          The projects I've built are a representaion of the{" "}
+          <span style={{ color: "#32967a", fontWeight: "700" }}>
+            dedication
+          </span>{" "}
+          I put in them. While going through a lot of struggles and debugging,
+          there was a lot of learning and further understanding along the way.
         </p>
       </div>
       <React.Fragment>

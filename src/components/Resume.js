@@ -1,6 +1,6 @@
 import React from "react";
 import Andy2 from "../images/andy2.png";
-import AndyResume from "../images/AndyChecoResume.pdf";
+import AndyResume from "../images/AndyChecoResume2.pdf";
 import AndyResumePic from "../images/Resume-pic.png";
 
 export default function Resume(props) {
@@ -34,15 +34,14 @@ export default function Resume(props) {
         <div className="why-hire-me center-column">
           <h3 className="resume-desc-title">So... Why hire me?</h3>
           <p className="resume-desc">
-            I know I possess the skills that is required for the role that I am
-            searching for. I believe that loving this field of work is a major
-            requirement and I can say that I meet that requirement by a long
-            run. Software engineering is what I am most passionate about and
-            what consumes most of my day just because of the ambition of
-            continuous learning. <br /> <br /> If you need someone that is a
-            team player, has great work ethic, is an ambitious worker, would
-            fall in love with his role, and would really love to chat with you
-            then scroll down to the next section and let's make it happen.
+            I am confident that I possess the skills required for me to
+            successfully execute the work that is given to me. Software
+            engineering is what I am most passionate about and what consumes
+            most of my day just because of the ambition of continuous learning.{" "}
+            <br /> <br /> If you need someone that is a team player, has great
+            work ethic, is an ambitious worker, would fall in love with his
+            role, and would really love to chat with you then scroll down to the
+            next section and let's make it happen.
           </p>
         </div>
         <div className="center-column">
