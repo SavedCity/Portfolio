@@ -257,3 +257,24 @@
 .github-mobile {
   display: none;
 }
+
+.availability-div {
+  background: #0005;
+  padding: 15px 0;
+}
+
+.availability-div > h2 {
+  color: #eee;
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-weight: 400;
+  font-family: fira sans;
+}
+
+.availability-div > h3 {
+  color: #ddd;
+  margin: 2px 0;
+  font-family: oswald;
+  font-weight: 500;
+  letter-spacing: 2px;
+}

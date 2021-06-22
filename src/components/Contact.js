@@ -53,15 +53,12 @@ export default function Contact(props) {
           <h2 className="center">
             <i className="fas fa-envelope"></i>
             <a className="email-link">
-              andycheco25@hotmail.com
-              <a
-                href="mailto:andycheco25@hotmail.com"
-                className="email-tooltip"
-              >
+              andycheco25@gmail.com
+              <a href="mailto:andycheco25@gmail.com" className="email-tooltip">
                 Email Me
               </a>
             </a>
-            <a href="mailto:andycheco25@hotmail.com" className="email-mobile">
+            <a href="mailto:andycheco25@gmail.com" className="email-mobile">
               Email
             </a>
           </h2>
@@ -85,6 +82,15 @@ export default function Contact(props) {
               Github
             </a>
           </h2>
+        </div>
+        <div className="availability-div">
+          <h2>Contact Availability</h2>
+          <h3>
+            Sun-Sat{" "}
+            <span style={{ color: "#fff", marginLeft: "10px" }}>
+              8am-6pm CST
+            </span>
+          </h3>
         </div>
       </div>
     </div>
