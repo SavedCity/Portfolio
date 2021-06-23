@@ -86,7 +86,7 @@ export default function Contact(props) {
         <div className="availability-div">
           <h2>Contact Availability</h2>
           <h3>
-            Sun-Sat{" "}
+            Everyday:
             <span style={{ color: "#fff", marginLeft: "10px" }}>
               8am-6pm CST
             </span>
