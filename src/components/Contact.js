@@ -18,7 +18,11 @@ export default function Contact(props) {
         <span className={props.lettersClass}>E</span>
       </div>
       <div className="contact-container">
-        <img className="sunglasses-img" src={AndySunglasses} />
+        <img
+          className="sunglasses-img"
+          src={AndySunglasses}
+          alt="andy-sunglasses"
+        />
         <h1 className="contact-card-name">Andy Checo</h1>
         <div className="contact-contacts center-column">
           <h2 className="center">

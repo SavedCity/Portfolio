@@ -1,5 +1,5 @@
 import React from "react";
-import Andy2 from "../images/andy2.png";
+// import Andy2 from "../images/andy2.png";
 import AndyResume from "../images/AndyChecoResume2.pdf";
 import AndyResumePic from "../images/Resume-pic.png";
 
@@ -17,13 +17,11 @@ export default function Resume(props) {
 
   window.onclick = function (event) {
     let openModal = document.getElementById("resume-modal");
-    if (event.target == openModal) {
+    if (event.target === openModal) {
       openModal.style.display = "none";
       document.body.style.overflow = "auto";
     }
   };
-
-  function allowScroll() {}
 
   return (
     <div id="resume" className="mobile-croll">

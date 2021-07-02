@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Navbar(props) {
   window.onscroll = () => {
@@ -12,7 +12,7 @@ export default function Navbar(props) {
     }
 
     let about2 = document.querySelector(".about-link2");
-    let about = document.querySelector(".about-link");
+    // let about = document.querySelector(".about-link");
     let skills = document.querySelector(".skills-link");
     let projects = document.querySelector(".projects-link");
     let resume = document.querySelector(".resume-link");

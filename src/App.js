@@ -65,7 +65,7 @@ export default function App() {
       delta = 0;
 
     // If the parent has .skewed class, set the skewHack var.
-    if (parent.className.indexOf("skewed") != -1) {
+    if (parent.className.indexOf("skewed") !== -1) {
       skewHack = 1000;
     }
 
