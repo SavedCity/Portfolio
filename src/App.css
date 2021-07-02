@@ -100,7 +100,7 @@ html {
   padding: 0 12px;
   font-weight: 700;
   font-size: 17px;
-  transition: 0.31s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .navbar2 > div > a:hover {
   color: #fff !important;
