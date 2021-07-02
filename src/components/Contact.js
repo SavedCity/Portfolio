@@ -27,16 +27,16 @@ export default function Contact(props) {
         <div className="contact-contacts center-column">
           <h2 className="center">
             <i className="fas fa-phone"></i>
-            <a className="tel-link" style={{ borderBottom: "none" }}>
+            <span className="tel-link" style={{ borderBottom: "none" }}>
               (917) 736-0925
-            </a>
+            </span>
             <a className="tel-mobile" href="tel:9177360925">
               (917) 736-0925
             </a>
           </h2>
           <h2 className="center">
             <i className="fab fa-linkedin"></i>
-            <a className="linkedin-link">
+            <span className="linkedin-link">
               LinkedIn
               <a
                 target="blank"
@@ -45,7 +45,7 @@ export default function Contact(props) {
               >
                 Visit my LinkedIn
               </a>
-            </a>
+            </span>
             <a
               target="blank"
               href="https://www.linkedin.com/in/andy-checo/"
@@ -56,19 +56,19 @@ export default function Contact(props) {
           </h2>
           <h2 className="center">
             <i className="fas fa-envelope"></i>
-            <a className="email-link">
+            <span className="email-link">
               andycheco25@gmail.com
               <a href="mailto:andycheco25@gmail.com" className="email-tooltip">
                 Email Me
               </a>
-            </a>
+            </span>
             <a href="mailto:andycheco25@gmail.com" className="email-mobile">
               Email
             </a>
           </h2>
           <h2 className="center">
             <i className="fab fa-github-square"></i>
-            <a className="github-link">
+            <span className="github-link">
               Github
               <a
                 target="blank"
@@ -77,7 +77,7 @@ export default function Contact(props) {
               >
                 Visit my Github
               </a>
-            </a>
+            </span>
             <a
               target="blank"
               href="https://github.com/SavedCity"

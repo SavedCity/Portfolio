@@ -52,7 +52,7 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
-            <img className="slider-img" src={spamazon} />
+            <img className="slider-img" src={spamazon} alt="slider-img" />
 
             <h2 className="spamazon">Spamazon</h2>
             <p className="project-desc">
@@ -146,7 +146,7 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
-            <img className="slider-img" src={myhome} />
+            <img className="slider-img" src={myhome} alt="slider-img" />
             <h2 className="myhome">
               myHome |{" "}
               <span
@@ -233,7 +233,7 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
-            <img className="slider-img" src={portfolio} />
+            <img className="slider-img" src={portfolio} alt="slider-img" />
             <h2 className="portfolio">Portfolio</h2>
 
             <p className="project-desc">
@@ -294,7 +294,7 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
-            <img className="slider-img" src={reviewt} />
+            <img className="slider-img" src={reviewt} alt="slider-img" />
             <h2 className="reviewt">Reviewt</h2>
 
             <p className="project-desc">
@@ -369,7 +369,7 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
-            <img className="slider-img" src={enoughhunger} />
+            <img className="slider-img" src={enoughhunger} alt="slider-img" />
             <h2 className="enough">Enough with cravings</h2>
 
             <p className="project-desc">
@@ -432,7 +432,7 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
-            <img className="slider-img" src={average} />
+            <img className="slider-img" src={average} alt="slider-img" />
             <h2 className="average">Average</h2>
 
             <p className="project-desc">
