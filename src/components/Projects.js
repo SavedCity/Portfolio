@@ -71,7 +71,7 @@ export default function Projects(props) {
               <a
                 style={{ borderRight: "2px solid #fff8" }}
                 target="blank"
-                href="https://spamazon-ga.herokuapp.com/"
+                href="https://spamazon.netlify.app/"
               >
                 Live Site
               </a>
