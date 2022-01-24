@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
+import Nytimes from "../images/Nytimes.png";
 import spamazon from "../images/spamazon.png";
 import myhome from "../images/myhome.png";
 import reviewt from "../images/reviewt.png";
@@ -23,10 +24,10 @@ export default function Projects(props) {
         <h1 className="projects-title">PROJECTS</h1>
         <div className={props.lineSlide}></div>
         <p className="projects-desc">
-          The projects I've built are a representaion of the{" "}
+          The projects I've built are a representaion of the
           <span style={{ color: "#32967a", fontWeight: "700" }}>
             dedication
-          </span>{" "}
+          </span>
           I put in them. While going through a lot of struggles and debugging,
           there was a lot of learning and further understanding along the way.
         </p>
@@ -39,6 +40,77 @@ export default function Projects(props) {
           spaceBetween={50}
           navigation
         >
+          {/* ==================== NYTimes ====================*/}
+
+          <SwiperSlide
+            onMouseEnter={() => {
+              setLinksClass(true);
+            }}
+            onMouseLeave={() => {
+              setLinksClass(false);
+            }}
+            className="center-column"
+            tag="ul"
+            key={"slide"}
+          >
+            <img className="slider-img" src={Nytimes} alt="slider-img" />
+
+            <h2 className="nytimes">NYTimes</h2>
+            <p className="project-desc">
+              The idea behind this project was to get my hands on an API that
+              would allow me to manipulate a lot of data. With all the data
+              coming from the NYTimes API, I was able to implement several
+              sections on the site (e.g. News, Books, Movies, etc). I also got
+              my hands dirty with Redux a bit and got a good idea on how to use
+              it, which is great considering how powerful it is. Finally,
+              Styled-Components allowed me to do my styling on the React file
+              itself which came in handy.
+            </p>
+            <div className={lowerLinks}>
+              <a
+                style={{ borderRight: "2px solid #fff8" }}
+                target="blank"
+                href="https://nytimes-bestseller.netlify.app/"
+              >
+                Live Site
+              </a>
+              <a
+                target="blank"
+                href="https://github.com/SavedCity/NYTimesBestSeller"
+              >
+                Github
+              </a>
+            </div>
+            <h3 className="languages-used">
+              React
+              <i
+                style={{ fontSize: "25px" }}
+                class="devicon-react-original colored"
+              ></i>
+              Redux
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-redux-original"
+              ></i>
+              Javascript
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-javascript-plain colored"
+              ></i>
+              HTML
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-html5-plain colored"
+              ></i>
+              CSS
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-css3-plain colored"
+              ></i>
+              Styled-Components
+            </h3>
+          </SwiperSlide>
+
           {/* ==================== SPAMAZON ====================*/}
 
           <SwiperSlide
@@ -56,16 +128,13 @@ export default function Projects(props) {
 
             <h2 className="spamazon">Spamazon</h2>
             <p className="project-desc">
-              Spamazon is an e-commerce application using React class
-              components. I love using React because of how fast it allows you
-              to browse through and the unlimited amount of things you can do
-              with it. Using authentication with Firebase for the first time was
-              surprisingly a very simple task. I was also happy about using
-              another database like Postgres and using tables to store my data
-              for a change after using MongoDB in the past. Lastly, using a high
-              programming language like Python fit very well with the backend of
-              this project. Definitely would be using it in the future because
-              it is a time saver.
+              Spamazon is an e-commerce application using ReactJS. Using
+              authentication with Firebase for the first time was surprisingly a
+              very simple task. I was also happy about using another database
+              like Postgres to store my data after using MongoDB in the past.
+              Lastly, using a high programming language like Python fit very
+              well with the backend of this project. Definitely would be using
+              it in the future because it is a time saver.
             </p>
             <div className={lowerLinks}>
               <a
@@ -83,49 +152,47 @@ export default function Projects(props) {
               </a>
             </div>
             <h3 className="languages-used">
-              React{" "}
+              React
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-react-original colored"
-              >
-                {" "}
-              </i>
-              Javascript{" "}
+              ></i>
+              Javascript
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
-              ></i>{" "}
-              PSQL{" "}
+              ></i>
+              PSQL
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-postgresql-plain colored"
-              ></i>{" "}
-              Python{" "}
+              ></i>
+              Python
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-python-plain colored"
-              ></i>{" "}
-              Django{" "}
+              ></i>
+              Django
               <i
                 style={{ fontSize: "29px" }}
                 className="devicon-django-plain colored"
-              ></i>{" "}
-              HTML{" "}
+              ></i>
+              HTML
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-html5-plain colored"
-              ></i>{" "}
-              CSS{" "}
+              ></i>
+              CSS
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-css3-plain colored"
-              ></i>{" "}
-              Firebase{" "}
+              ></i>
+              Firebase
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-firebase-plain colored"
               ></i>
-              Heroku{" "}
+              Heroku
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-heroku-original colored"
@@ -148,7 +215,7 @@ export default function Projects(props) {
           >
             <img className="slider-img" src={myhome} alt="slider-img" />
             <h2 className="myhome">
-              myHome |{" "}
+              myHome |
               <span
                 style={{ color: "#080", fontSize: "14px", fontWeight: "900" }}
               >
@@ -180,39 +247,37 @@ export default function Projects(props) {
               </a>
             </div>
             <h3 className="languages-used">
-              React{" "}
+              React
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-react-original colored"
-              >
-                {" "}
-              </i>
-              Javascript{" "}
+              ></i>
+              Javascript
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
-              ></i>{" "}
-              MongoDB{" "}
+              ></i>
+              MongoDB
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-mongodb-plain colored"
-              ></i>{" "}
-              Express{" "}
+              ></i>
+              Express
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-express-original colored"
-              ></i>{" "}
-              HTML{" "}
+              ></i>
+              HTML
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-html5-plain colored"
-              ></i>{" "}
-              CSS{" "}
+              ></i>
+              CSS
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-css3-plain colored"
-              ></i>{" "}
-              JWT - Bcrypt - Heroku{" "}
+              ></i>
+              JWT - Bcrypt - Heroku
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-heroku-original colored"
@@ -251,29 +316,27 @@ export default function Projects(props) {
               </a>
             </div>
             <h3 className="languages-used">
-              React{" "}
+              React
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-react-original colored"
-              >
-                {" "}
-              </i>
-              Javascript{" "}
+              ></i>
+              Javascript
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
-              ></i>{" "}
-              HTML{" "}
+              ></i>
+              HTML
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-html5-plain colored"
-              ></i>{" "}
-              Swiper - CSS{" "}
+              ></i>
+              Swiper - CSS
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-css3-plain colored"
-              ></i>{" "}
-              Heroku{" "}
+              ></i>
+              Heroku
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-heroku-original colored"
@@ -309,7 +372,7 @@ export default function Projects(props) {
               <a
                 style={{ borderRight: "2px solid #fff8" }}
                 target="blank"
-                href="https://savedcity.herokuapp.com/sessions/signin"
+                href="https://reviewt-app.herokuapp.com/sessions/signin"
               >
                 Live Site
               </a>
@@ -318,37 +381,37 @@ export default function Projects(props) {
               </a>
             </div>
             <h3 className="languages-used">
-              Javascript{" "}
+              Javascript
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
-              ></i>{" "}
-              jQuery{" "}
+              ></i>
+              jQuery
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-jquery-plain colored"
-              ></i>{" "}
-              MongoDB{" "}
+              ></i>
+              MongoDB
               <i
                 style={{ fontSize: "29px" }}
                 className="devicon-mongodb-plain colored"
-              ></i>{" "}
-              Express{" "}
+              ></i>
+              Express
               <i
                 style={{ fontSize: "29px" }}
                 className="devicon-express-original colored"
-              ></i>{" "}
-              HTML{" "}
+              ></i>
+              HTML
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-html5-plain colored"
-              ></i>{" "}
-              CSS{" "}
+              ></i>
+              CSS
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-css3-plain colored"
-              ></i>{" "}
-              Heroku{" "}
+              ></i>
+              Heroku
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-heroku-original colored"
@@ -395,26 +458,26 @@ export default function Projects(props) {
               </a>
             </div>
             <h3 className="languages-used">
-              Javascript{" "}
+              Javascript
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
-              ></i>{" "}
-              jQuery{" "}
+              ></i>
+              jQuery
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-jquery-plain colored"
-              ></i>{" "}
-              HTML{" "}
+              ></i>
+              HTML
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-html5-plain colored"
-              ></i>{" "}
-              CSS{" "}
+              ></i>
+              CSS
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-css3-plain colored"
-              ></i>{" "}
+              ></i>
               - Netlify
             </h3>
           </SwiperSlide>
@@ -442,7 +505,7 @@ export default function Projects(props) {
               still had a lot to take in. Even though it was a challenge to get
               everything done and still have some things wanting to implement,
               it was a definite learning curve which, again, I love. It may not
-              be as cool as Medium.com but at least it's... 'Average'{" "}
+              be as cool as Medium.com but at least it's... 'Average'
             </p>
             <div className={lowerLinks}>
               <a
@@ -457,39 +520,37 @@ export default function Projects(props) {
               </a>
             </div>
             <h3 className="languages-used">
-              React{" "}
+              React
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-react-original colored"
-              >
-                {" "}
-              </i>
-              Javascript{" "}
+              ></i>
+              Javascript
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-javascript-plain colored"
-              ></i>{" "}
-              MongoDB{" "}
+              ></i>
+              MongoDB
               <i
                 style={{ fontSize: "29px" }}
                 className="devicon-mongodb-plain colored"
-              ></i>{" "}
-              Express{" "}
+              ></i>
+              Express
               <i
                 style={{ fontSize: "29px" }}
                 className="devicon-express-original colored"
-              ></i>{" "}
-              HTML{" "}
+              ></i>
+              HTML
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-html5-plain colored"
-              ></i>{" "}
-              CSS{" "}
+              ></i>
+              CSS
               <i
                 style={{ fontSize: "25px" }}
                 className="devicon-css3-plain colored"
-              ></i>{" "}
-              - Bcrypt - Heroku{" "}
+              ></i>
+              - Bcrypt - Heroku
               <i
                 style={{ fontSize: "25px" }}
                 class="devicon-heroku-original colored"

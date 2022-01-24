@@ -137,6 +137,14 @@
   display: none !important;
 }
 
+.nytimes {
+  font-size: 1.6rem;
+  font-family: "Times New Roman";
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #000;
+}
+
 .spamazon {
   font-size: 1.6rem;
   font-family: merienda one;

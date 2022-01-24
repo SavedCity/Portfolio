@@ -1,6 +1,6 @@
 import React from "react";
 // import Andy2 from "../images/andy2.png";
-import AndyResume from "../images/AndyChecoResume2.pdf";
+import AndyResume from "../images/Andy_Checo_Resume.pdf";
 import AndyResumePic from "../images/Resume-pic.png";
 
 export default function Resume(props) {
@@ -42,7 +42,7 @@ export default function Resume(props) {
             next section and let's make it happen.
           </p>
         </div>
-        <div className="center-column">
+        <div style={{ width: "50%" }} className="center-column">
           <img className="resume-photo" src={AndyResumePic} alt="andy2" />
           <div className="resume-buttons">
             <button onClick={openModal} className="view-button">

@@ -92,7 +92,7 @@ export default function Contact(props) {
           <h3>
             Everyday:
             <span style={{ color: "#fff", marginLeft: "10px" }}>
-              8am-6pm CST
+              8am-6pm EST
             </span>
           </h3>
         </div>

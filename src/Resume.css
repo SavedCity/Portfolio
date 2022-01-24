@@ -72,6 +72,7 @@
   /* margin-bottom: 100px; */
   width: 30%;
   box-shadow: 8px 8px 10px #0002;
+  /* margin: 0 30px; */
 }
 
 .resume-desc-title {
@@ -93,7 +94,7 @@
 
 .resume-photo {
   /* opacity: 0.9; */
-  width: 52%;
+  width: 60%;
   margin: 0 0 20px 0;
   box-shadow: 8px 8px 10px #0002;
 }
@@ -109,7 +110,7 @@
   background: #16899a;
   color: #fff;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s;
   font-weight: 800;
   letter-spacing: 3px;
   box-shadow: 4px 4px 7px #0004;
