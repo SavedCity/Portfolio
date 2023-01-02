@@ -29,7 +29,7 @@ export default function Projects(props) {
           <span style={{ color: "#32967a", fontWeight: "700" }}>
             dedication
           </span>{" "}
-          I put in them. While going through a lot of struggles and debugging,
+          I put in my daily work. While going through a lot of struggles and debugging,
           there was a lot of learning and further understanding along the way.
         </p>
       </div>
