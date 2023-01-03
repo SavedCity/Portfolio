@@ -10,6 +10,7 @@ import reviewt from "../images/reviewt.png";
 import average from "../images/average.png";
 import enoughhunger from "../images/enoughhunger.png";
 import portfolio from "../images/andy-portfolio.png";
+import { AiFillWarning } from 'react-icons/ai';
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -186,6 +187,10 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
+            <h1 className="broken-warning">
+              <AiFillWarning/>
+              Broken API due to Heroku's data removal on free service apps
+            </h1>
             <img className="slider-img" src={spamazon} alt="slider-img" />
 
             <h2 className="spamazon">Spamazon</h2>
@@ -275,14 +280,13 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
+            <h1 className="broken-warning">
+              <AiFillWarning/>
+              Broken API due to Heroku's data removal on free service apps
+            </h1>
             <img className="slider-img" src={myhome} alt="slider-img" />
             <h2 className="myhome">
-              myHome |
-              <span
-                style={{ color: "#080", fontSize: "14px", fontWeight: "900" }}
-              >
-                Ongoing project
-              </span>
+              myHome
             </h2>
 
             <p className="project-desc">
@@ -419,6 +423,10 @@ export default function Projects(props) {
             tag="ul"
             key={"slide"}
           >
+            <h1 className="broken-warning">
+              <AiFillWarning/>
+              Broken API due to Heroku's data removal on free service apps
+            </h1>
             <img className="slider-img" src={reviewt} alt="slider-img" />
             <h2 className="reviewt">Reviewt</h2>
 
@@ -546,7 +554,7 @@ export default function Projects(props) {
 
           {/* ==================== AVERAGE ==================== */}
 
-          <SwiperSlide
+          {/* <SwiperSlide
             onMouseEnter={() => {
               setLinksClass(true);
             }}
@@ -618,7 +626,7 @@ export default function Projects(props) {
                 class="devicon-heroku-original colored"
               ></i>
             </h3>
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </React.Fragment>
     </div>

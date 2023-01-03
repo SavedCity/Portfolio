@@ -256,3 +256,16 @@
 .project-links-div > a:hover {
   color: #fff;
 }
+
+.broken-warning {
+  color: #000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 17px;
+  margin: 40px 0 0;
+  background-color: rgb(255, 114, 63);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+}
