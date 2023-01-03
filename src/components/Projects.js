@@ -4,6 +4,7 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
 import Nytimes from "../images/Nytimes.png";
 import Gridlife from "../images/gridlife.png";
+import cardo from "../images/cardo.png";
 import spamazon from "../images/spamazon.png";
 import myhome from "../images/myhome.png";
 import reviewt from "../images/reviewt.png";
@@ -57,7 +58,7 @@ export default function Projects(props) {
           >
             <img className="slider-img" src={Gridlife} alt="slider-img" />
 
-            <h2 className="gridlife">Gridlife.club</h2>
+            <h2 className="gridlife">Gridlife Club</h2>
             <p className="project-desc">
             As a big part of the development and launching process for <a target='blank' href='https://gridlife.club'>Gridlife.club</a> (a new platform part of <a target='blank' href='https://www.grid.life/'>Grid.life</a>) with only 2 of us as developers we were able to deliver our product quickly and ready for drivers. This platform is meant for Gridlife's drivers to have an application where they can quickly sign up for races beforehand to save time when getting to the track. From here, drivers can also sign important forms, create a profile, add vehicles, see upcoming races, and more!
             </p>
@@ -171,6 +172,57 @@ export default function Projects(props) {
                 className="devicon-css3-plain colored"
               ></i>
               Styled-Components
+            </h3>
+          </SwiperSlide>
+
+          {/* ==================== Cardo ====================*/}
+
+          <SwiperSlide
+            onMouseEnter={() => {
+              setLinksClass(true);
+            }}
+            onMouseLeave={() => {
+              setLinksClass(false);
+            }}
+            className="center-column"
+            tag="ul"
+            key={"slide"}
+          >
+            <img className="slider-img" src={cardo} alt="slider-img" />
+
+            <h2 className="cardo">Cardo</h2>
+            <p className="project-desc">
+              A highly responsive and beautiful page done with React. This app features responsive css, highly customized elements, hamburger menu and more.
+            </p>
+            <div className={lowerLinks}>
+              <a
+                target="blank"
+                href="https://baal-cardo.netlify.app/"
+              >
+                Live Site
+              </a>
+            </div>
+            <h3 className="languages-used">
+              React
+              <i
+                style={{ fontSize: "25px" }}
+                class="devicon-react-original colored"
+              ></i>
+              Javascript
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-javascript-plain colored"
+              ></i>
+              HTML
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-html5-plain colored"
+              ></i>
+              CSS
+              <i
+                style={{ fontSize: "25px" }}
+                className="devicon-css3-plain colored"
+              ></i>
             </h3>
           </SwiperSlide>
 
