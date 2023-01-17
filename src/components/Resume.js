@@ -36,9 +36,8 @@ export default function Resume(props) {
             successfully execute the work that is given to me. Software
             engineering is what I am most passionate about and what consumes
             most of my day just because of the ambition of continuous learning.{" "}
-            <br /> <br /> If you need someone that is a team player, has great
-            work ethic, is an ambitious worker, would fall in love with his
-            role, and would really love to chat with you then scroll down to the
+            <br /> <br /> If you need someone who works great on a team, communicates really well, shows ambition in his work,
+            would fall in love in his role, and would really love to chat with you then scroll down to the
             next section and let's make it happen.
           </p>
         </div>

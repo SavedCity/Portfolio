@@ -90,8 +90,7 @@ export default function App() {
             <div class="description">
               <h1 className="title-right">Software Developer</h1>
               <p className="desc-right">
-                With a true passion in this field I am willing to go beyond
-                anyone's expectations to show off my skills and worth.
+                With a true passion in this field I express my commitment to exceed expectations through the work that I deliver and leadership.
               </p>
             </div>
 
