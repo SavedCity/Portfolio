@@ -210,3 +210,17 @@
   font-weight: 400;
   margin: 25px 0;
 }
+
+.open-external-div {
+  display: flex;
+  column-gap: .5em;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.open-external-div > a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: large;
+}

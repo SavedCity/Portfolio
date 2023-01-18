@@ -2,6 +2,7 @@ import React from "react";
 // import Andy2 from "../images/andy2.png";
 import AndyResume from "../images/Andy_Checo_Resume.pdf";
 import AndyResumePic from "../images/Resume-pic.png";
+import { BiLinkExternal } from 'react-icons/bi';
 
 export default function Resume(props) {
   function openModal() {
@@ -59,6 +60,12 @@ export default function Resume(props) {
               <h2>Andy Checo | Resume</h2>
             </div>
             <div className="center-column">
+              <div className="open-external-div">
+                <span>Unable to view?</span>
+                <a target='_blank' href="https://www.canva.com/design/DAE1LiGI8nY/4FUaAFOKMCSm_ZB57WRfWg/view?utm_content=DAE1LiGI8nY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Open <BiLinkExternal/></a>
+                <span>or</span>
+                <a href={AndyResume} download>Download</a>
+              </div>
               <embed
                 className="resume-modal-photo"
                 src={AndyResume}
