@@ -61,12 +61,12 @@
   /* color: #69a95c; */
 }
 
-#icon {
+.icon {
   border-bottom: 1px solid #0000;
   transition: 0.5s ease-in-out;
 }
 
-#icon-line {
+.icon-line {
   border-bottom: 1px solid #ddd;
   transition: 0.3s ease-in-out;
 }
@@ -75,14 +75,17 @@
   font-size: 20px;
   position: absolute;
   margin-top: 100px;
-  color: #0000;
-  transition: 0.5s ease-in-out;
+  color: #777;
+  /* color: #0000; */
+  opacity: 0;
+  transition: 0.3s opacity, 0.5s margin ease-in-out;
   font-weight: 300;
 }
 
 .slide {
-  color: #777;
+  opacity: 1;
   margin-top: 170px;
+  transition: 1s opacity, 0.3s margin ease-in-out;
 }
 
 .devicon-javascript-plain {

@@ -48,14 +48,7 @@ html {
   align-items: center;
   z-index: 4;
   transition: 0.5s;
-  background: linear-gradient(
-    to left,
-    #036666,
-    #358f80,
-    #469d89,
-    #99e2b4,
-    #fff 100%
-  );
+  background: linear-gradient(to left, #036666, #358f80, #469d89, #99e2b4, #fff 100%);
   box-shadow: 0 0 20px #0004;
 }
 
@@ -149,7 +142,7 @@ html {
 .footer-title {
   font-family: montserrat;
   font-weight: 300;
-  color: #777;
+  color: #333;
   font-size: 1.1rem;
   text-align: center;
   padding: 30px 0;

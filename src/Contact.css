@@ -144,7 +144,7 @@
 }
 
 .linkedin-link .linkedin-tooltip::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 100%;
@@ -184,7 +184,7 @@
 }
 
 .email-link .email-tooltip::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 100%;
@@ -224,7 +224,7 @@
 }
 
 .github-link .github-tooltip::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   right: 100%;
@@ -259,8 +259,9 @@
 }
 
 .availability-div {
-  background: #0005;
+  background: #4c4444;
   padding: 15px 0;
+  color: white;
 }
 
 .availability-div > h2 {
