@@ -10,12 +10,11 @@ export default function Skills() {
       <h1 className='skills-title'>SKILLS</h1>
 
       <p className='skills-desc'>
-        I use my skills with{' '}
+        By applying my skills{' '}
         <span style={{ color: '#69a95c', fontWeight: '700', filter: 'contrast(1.75)' }}>
-          proficiency
+          proficiently
         </span>{' '}
-        when working on projects or in everyday coding. In doing so, I sharpen those skills allowing
-        me to learn something new every time.{' '}
+        in diverse projects and daily coding challenges, I continuously enhance my abilities and discover new knowledge with each experience. {' '}
       </p>
       <div
         onMouseEnter={() => {

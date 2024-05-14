@@ -97,6 +97,10 @@
   cursor: grabbing;
 }
 
+.swiper-slide {
+  padding-left: 40px;
+}
+
 .swiper-button-prev {
   color: #444 !important;
   transition: 0.3s;

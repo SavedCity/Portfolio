@@ -90,7 +90,7 @@ export default function App() {
             <div class="description">
               <h1 className="title-right">Software Engineer</h1>
               <p className="desc-right">
-              As a front-end software engineer, I am deeply dedicated to this field, driving my commitment to delivering exceptional work and providing effective leadership
+                As a front-end software engineer, I am deeply dedicated to this field, driving my commitment to delivering exceptional work and providing effective leadership
               </p>
             </div>
 
