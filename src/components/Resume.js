@@ -36,7 +36,7 @@ window.addEventListener('click', (event) => {
           <h3 className='resume-desc-title'>So... Why choose me?</h3>
           <p className='resume-desc'>
             I am confident in my ability to effectively execute tasks within my skills and knowledge, and I am dedicated to expanding those and learn new ones to tackle new challenges as they arise. My proactive approach ensures that I continually grow and adapt to meet the evolving needs of any project. <br />{' '}
-            <br /> If you're seeking a team player with strong communication skills, steadfast ambition in their work, a genuine passion for their role, and someone who is eager to connect, then I invite you to scroll down to the next section. Let's make it happen together.
+            <br /> If you're seeking a team player with strong communication skills, steadfast ambition in their work, a genuine passion for their role, and someone who is eager to connect, then I invite you to scroll down to the next section. Let's make it happen!
           </p>
         </div>
         <div className='center-column'>
