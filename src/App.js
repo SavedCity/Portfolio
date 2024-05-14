@@ -102,13 +102,13 @@ export default function App() {
           <div class="content">
             <div class="description">
               <h1 className={flick}>Andy Checo</h1>
-              <ul className="desc-left center-column">
-                <li>Passion in diverse projects, from web dev to DIY</li>
-                <li>x2 girl dad</li> 
-                <li>Video game enthusiast</li>
-                <li>Outdoors/Active lifestyle</li>
-                <li>Bears, beets, battlestar galactica</li>
-              </ul>
+              <div className="desc-left center-column">
+                <p>Passion in diverse projects, from web dev to DIY</p>
+                <p>x2 girl dad</p> 
+                <p>Video game enthusiast</p>
+                <p>Outdoors/Active lifestyle</p>
+                <p>Bears, beets, battlestar galactica</p>
+              </div>
             </div>
 
             <img className="img-left" src={AndyAndYoshi} alt="Duotone" />
