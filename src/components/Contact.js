@@ -30,6 +30,20 @@ export default function Contact(props) {
               (917) 736-0925
             </a>
           </h2>
+          
+          <h2 className='center'>
+            <i className='fas fa-envelope'></i>
+            <span className='email-link'>
+              andycheco25@gmail.com
+              <a href='mailto:andycheco25@gmail.com' className='email-tooltip'>
+                Email Me
+              </a>
+            </span>
+            <a href='mailto:andycheco25@gmail.com' className='email-mobile'>
+              Email
+            </a>
+          </h2>
+          
           <h2 className='center'>
             <i className='fab fa-linkedin'></i>
             <span className='linkedin-link'>
@@ -48,18 +62,6 @@ export default function Contact(props) {
               className='linkedin-mobile'
             >
               LinkedIn
-            </a>
-          </h2>
-          <h2 className='center'>
-            <i className='fas fa-envelope'></i>
-            <span className='email-link'>
-              andycheco25@gmail.com
-              <a href='mailto:andycheco25@gmail.com' className='email-tooltip'>
-                Email Me
-              </a>
-            </span>
-            <a href='mailto:andycheco25@gmail.com' className='email-mobile'>
-              Email
             </a>
           </h2>
           <h2 className='center'>

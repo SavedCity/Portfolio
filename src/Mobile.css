@@ -1,8 +1,74 @@
+@media (max-width: 1000px) {
+  .panel .description {
+    top: 40%;
+  }
+
+  .title-left {
+    font-size: 2.5rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  .desc-left {
+    font-size: 1rem;
+    top: 70%;
+    left: 0%;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: unset;
+  }
+
+  .desc-left > li {
+    font-size: .9rem;
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  .title-right {
+    font-size: 1.9rem;
+    margin-left: 0%;
+    width: 90%;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+
+  .desc-right {
+    font-size: 1.1rem;
+    text-align: center;
+    right: 11%;
+    position: absolute;
+    top: 65%;
+    width: 90%;
+    color: #5f5f5f;
+    font-weight: 500;
+  }
+
+  .panel .img-left {
+    width: 35%;
+    top: 49%;
+    left: 60%;
+  }
+
+  .panel .img-right {
+    width: 35%;
+    top: 58%;
+    left: 30%;
+  }
+
+  .icons-div {
+    margin: 0 80px 100px;
+  }
+
+  .line {
+    width: 50%;
+  }
+}
+
 @media (max-width: 600px) {
   body {
     margin-top: 80px;
     --webkit-overflow-scrolling: touch;
-  }
+}
 
   /* ================== NAV BAR AND ABOUT ME ================== */
 
@@ -62,53 +128,30 @@
     right: 35%;
   }
 
+  .panel .description {
+    top: 30%;
+  }
+
   .title-left {
+    margin-bottom: 10px;
     font-size: 30px;
-    margin-bottom: 50px;
-    margin-left: 6%;
   }
 
   .desc-left {
-    font-size: 10px;
-    top: 55%;
-    width: 90%;
-    font-weight: 700;
-  }
-
-  .desc-left > p {
-    padding: 0;
-    margin: 0.5px 10px;
+    li {
+      font-size: .7rem;
+      margin: 0 10px;
+    }
   }
 
   .title-right {
     font-size: 17px;
-    margin-left: 0%;
-    width: 90%;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
   }
 
   .desc-right {
     font-size: 13px;
-    text-align: center;
     right: 11%;
-    position: absolute;
-    top: 37%;
-    width: 90%;
-    color: #5f5f5f;
-    font-weight: 500;
-  }
-
-  .panel .img-left {
-    width: 35%;
-    top: 49%;
-    left: 60%;
-  }
-
-  .panel .img-right {
-    width: 35%;
-    top: 58%;
-    left: 30%;
+    top: 50%;
   }
 
   /* ================== SKILLS ================== */
@@ -116,7 +159,7 @@
   .skills-title {
     font-size: 2.8rem;
     width: 70%;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-top: 40px;
   }
 
@@ -124,7 +167,8 @@
     font-size: 20px;
     width: 93%;
     letter-spacing: 1px;
-    margin-bottom: 60px;
+    margin-bottom: 40px !important;
+    margin-top: 20px !important;
   }
 
   .icons-div {
@@ -159,7 +203,6 @@
   .line {
     width: 60%;
     left: 34.5%;
-    margin-bottom: 70px;
   }
 
   .appear {

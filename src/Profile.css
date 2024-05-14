@@ -29,14 +29,15 @@
 }
 
 .title-left {
-  font-size: 100px;
+  font-size: 90px;
   font-family: josefin sans;
-  margin-left: 9%;
-  width: 100%;
+  width: 80%;
   color: #eee;
-  text-align: left;
+  text-align: center;
   text-shadow: 2px 2px 10px #0006;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  /* margin-right: 10px; */
+  white-space: nowrap;
 }
 .flicker {
   /* animation: flicker 5s linear infinite; */
@@ -75,21 +76,28 @@
 }
 
 .desc-left {
-  font-size: 27px;
-  text-align: center;
-  left: 3%;
   position: absolute;
   top: 70%;
+  left: 3%;
+  font-size: 27px;
+  text-align: center;
   width: 70%;
   color: #555;
   /* text-shadow: 2px 3px 2px #3c64; */
   font-weight: 500;
-  letter-spacing: 2px;
-}
-.desc-left > p {
+  letter-spacing: 1px;
   padding: 0;
-  margin: 6px 0;
-  padding-bottom: 2px;
+
+  li {
+    padding: 0;
+    margin: 6px 0;  
+    padding-bottom: 2px;
+    list-style: none;
+  }
+  li:before {
+    content: "•";
+    padding-right: 10px;
+  }
 }
 
 .title-right {

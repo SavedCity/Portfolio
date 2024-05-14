@@ -5,24 +5,26 @@ import AndyResumePic from '../images/Resume-pic.png'
 import { BiLinkExternal } from 'react-icons/bi'
 
 export default function Resume(props) {
-  function openModal() {
-    let openModal = document.getElementById('resume-modal')
-    openModal.style.display = 'block'
-    document.body.style.overflow = 'hidden'
-  }
-  function closeModal() {
-    let openModal = document.getElementById('resume-modal')
-    openModal.style.display = 'none'
-    document.body.style.overflow = 'auto'
-  }
+function toggleModal(isOpen) {
+  const resumeModal = document.getElementById('resume-modal');
+  resumeModal.style.display = isOpen ? 'block' : 'none';
+  document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+}
 
-  window.onclick = function (event) {
-    let openModal = document.getElementById('resume-modal')
-    if (event.target === openModal) {
-      openModal.style.display = 'none'
-      document.body.style.overflow = 'auto'
-    }
+function openModal() {
+  toggleModal(true);
+}
+
+function closeModal() {
+  toggleModal(false);
+}
+
+window.addEventListener('click', (event) => {
+  const resumeModal = document.getElementById('resume-modal');
+  if (event.target === resumeModal) {
+    closeModal();
   }
+});
 
   return (
     <div id='resume' className='mobile-croll'>
@@ -31,17 +33,13 @@ export default function Resume(props) {
       </div>
       <div className='resume-div center'>
         <div className='why-hire-me center-column'>
-          <h3 className='resume-desc-title'>So... Why hire me?</h3>
+          <h3 className='resume-desc-title'>So... Why choose me?</h3>
           <p className='resume-desc'>
-            I am confident that I possess the skills required for me to successfully execute the
-            work that is given to me. Software engineering is what I am most passionate about and
-            what consumes most of my day just because of the ambition of continuous learning. <br />{' '}
-            <br /> If you need someone who works great on a team, communicates really well, shows
-            ambition in his work, would fall in love in his role, and would really love to chat with
-            you then scroll down to the next section and let's make it happen.
+            I am confident in my ability to effectively execute tasks within my skills and knowledge, and I am dedicated to expanding those and learn new ones to tackle new challenges as they arise. My proactive approach ensures that I continually grow and adapt to meet the evolving needs of any project. <br />{' '}
+            <br /> If you're seeking a team player with strong communication skills, steadfast ambition in their work, a genuine passion for their role, and someone who is eager to connect, then I invite you to scroll down to the next section. Let's make it happen together.
           </p>
         </div>
-        <div style={{ width: '50%' }} className='center-column'>
+        <div className='center-column'>
           <img className='resume-photo' src={AndyResumePic} alt='andy2' />
           <div className='resume-buttons'>
             <button onClick={openModal} className='view-button'>

@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   border-top: 1px solid #0003;
+  position: relative;
 }
 
 .projects-title {
@@ -22,16 +23,15 @@
   background: linear-gradient(to bottom, #000, #000, #fff 98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 70%;
 }
 
 .line {
-  width: 30%;
+  width: 400px;
   background: #999;
   height: 2px;
   position: absolute;
   left: 34.5%;
-  margin-bottom: 40px;
+  top: 11.6rem;
 }
 
 .appear {
@@ -47,7 +47,7 @@
   }
   40%,
   70% {
-    left: 34.5%;
+    left: 40.5%;
     height: 3px;
     background: #999;
   }
@@ -66,11 +66,10 @@
 
 .projects-desc {
   font-size: 30px;
-  width: 65%;
   text-align: center;
   letter-spacing: 1px;
   font-family: overpass;
-  margin-bottom: 60px;
+  margin: 30px 20rem 60px;
   color: #555;
 }
 

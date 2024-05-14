@@ -1,11 +1,4 @@
-import "./App.css";
-import "./Skills.css";
-import "./Profile.css";
-import "./Projects.css";
-import "./Resume.css";
-import "./Contact.css";
-import "./Mobile.css";
-import "./Laptops.css";
+import React, { useState } from "react";
 
 import Navbar from "../src/components/Navbar";
 import Footer from "../src/components/Footer";
@@ -17,7 +10,14 @@ import Contact from "../src/components/Contact";
 import Andy from "../src/images/andy.png";
 import AndyAndYoshi from "../src/images/andy-and-yoshi.png";
 
-import React, { useState } from "react";
+import "./App.css";
+import "./Skills.css";
+import "./Profile.css";
+import "./Projects.css";
+import "./Resume.css";
+import "./Contact.css";
+import "./Mobile.css";
+import "./Laptops.css";
 
 export default function App() {
   const [flicker, setFlicker] = useState(true);
@@ -88,9 +88,9 @@ export default function App() {
         <div class="panel bottom">
           <div class="content">
             <div class="description">
-              <h1 className="title-right">Software Developer</h1>
+              <h1 className="title-right">Software Engineer</h1>
               <p className="desc-right">
-                With a true passion in this field I express my commitment to exceed expectations through the work that I deliver and leadership.
+              As a front-end software engineer, I am deeply dedicated to this field, driving my commitment to delivering exceptional work and providing effective leadership
               </p>
             </div>
 
@@ -102,13 +102,13 @@ export default function App() {
           <div class="content">
             <div class="description">
               <h1 className={flick}>Andy Checo</h1>
-              <div className="desc-left center-column">
-                <p>Love continuous work on projects</p>
-                <p>First time father</p>
-                <p>Video game enthusiast</p>
-                <p>Outdoors/Active guy</p>
-                <p>Bears, beets, battlestar galactica</p>
-              </div>
+              <ul className="desc-left center-column">
+                <li>Passion in diverse projects, from web dev to DIY</li>
+                <li>x2 girl dad</li> 
+                <li>Video game enthusiast</li>
+                <li>Outdoors/Active lifestyle</li>
+                <li>Bears, beets, battlestar galactica</li>
+              </ul>
             </div>
 
             <img className="img-left" src={AndyAndYoshi} alt="Duotone" />

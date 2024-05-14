@@ -25,10 +25,9 @@ export default function Projects(props) {
         <h1 className='projects-title'>PROJECTS</h1>
         <div className={props.lineSlide}></div>
         <p className='projects-desc'>
-          The projects I've built are a representaion of the{' '}
-          <span style={{ color: '#32967a', fontWeight: '700' }}>dedication</span> I put into my
-          daily work. While going through a lot of struggles and debugging, there was a lot of
-          learning and further understanding along the way.
+          The projects I've developed stand as a testament to my unwavering{' '}
+          <span style={{ color: '#32967a', fontWeight: '700' }}>dedication</span> to my craft. Despite encountering numerous challenges and
+          debugging processes, each obstacle presented an invaluable opportunity for learning and deepening my understanding.
         </p>
       </div>
       <React.Fragment>

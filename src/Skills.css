@@ -12,11 +12,9 @@
   font-family: Josefin Sans;
   letter-spacing: 15px;
   font-weight: 500;
-  width: 70%;
   padding-top: 20px;
   /* color: #52b69a; */
-  margin-bottom: 10px;
-  margin-top: 100px;
+  margin: 100px 0 10px;
   background: linear-gradient(to bottom, #036666, #007f5f, #fff 98%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -26,11 +24,10 @@
 
 .skills-desc {
   font-size: 26px;
-  width: 65%;
   text-align: center;
   letter-spacing: 2px;
   font-family: overpass;
-  margin-bottom: 60px;
+  margin: 26px 20rem 60px;
   color: #555;
 }
 
@@ -41,9 +38,9 @@
   /* background: #0003; */
   margin: 0 200px;
   align-items: center;
-  /* width: 50% */
   margin-bottom: 100px;
 }
+
 .icons-div > div {
   display: flex;
   flex-direction: column;
