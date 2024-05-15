@@ -165,6 +165,12 @@
     top: 50%;
   }
 
+  .panel .img-left {
+    width: 40%;
+    top: 52%;
+    left: 64%;
+  }
+
   /* ================== SKILLS ================== */
 
   .skills-title {
@@ -268,6 +274,13 @@
   }
   .swiper-button-next {
     display: none !important;
+  }
+
+  .splitview,
+  .panel,
+  .panel .content
+   {
+    min-height: 55vw;
   }
 
   .project-desc {
