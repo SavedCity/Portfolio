@@ -59,11 +59,11 @@ export default function Navbar(props) {
 
           <a href='#skills'>SKILLS</a>
 
-          <a className='projects-link1' href='#projects'>
+          <a  href='#projects'>
             PROJECTS
           </a>
 
-          <a href='#resume'>RESUME</a>
+          <a className='gold-link1' href='#resume'>RESUME</a>
 
           <a href='#contact'>CONTACT</a>
         </div>

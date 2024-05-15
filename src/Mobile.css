@@ -463,3 +463,21 @@
     cursor: pointer !important;
   }
 }
+
+@media (max-width: 400px) {
+  .title-left {
+    margin-bottom: 20px;
+  }
+
+  .desc-left {
+    top: 50%;
+  }
+
+  .title-right {
+    margin-bottom: 33px;
+  }
+
+  .desc-right {
+    top: 40%;
+  }
+}
