@@ -201,14 +201,11 @@
   }
 
   .icon-name {
-    font-size: 20px;
-    margin-top: 0px;
-    color: #777;
-    position: inherit;
+    display: none;
   }
 
   #icon-line {
-    border-bottom: 1px solid #ddd0;
+    display: none;
   }
 
   /* PROJECTS */
